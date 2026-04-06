@@ -46,7 +46,7 @@ export const HERO_CONTENT = {
 export const INTRO_CONTENT = {
     title: "Hire Dedicated Software Developers in the UK",
     paragraphs: [
-        <>With over 22+ years of experience delivering robust and award-winning software solutions – we will make sure that your product has all it needs to succeed. Here at Hidden Brains, we have built a team of highly-skilled, experienced, professional, and seasoned software, web, and <strong><a href="/hire-mobile-apps-developer.html" className="text-orange-500 hover:underline">mobile app developers</a></strong> that can help you accelerate your user business growth.</>,
+        <>With over 22+ years of experience delivering robust and award-winning software solutions – we will make sure that your product has all it needs to succeed. Here at Hidden Brains, we have built a team of highly-skilled, experienced, professional, and seasoned software, web, and <strong><a href="/hire-mobile-apps-developer" className="text-orange-500 hover:underline">mobile app developers</a></strong> that can help you accelerate your user business growth.</>,
         <>With the dominant leadership in the IT industry, we have established a strong foothold by delivering highly secure, reliable and scalable, and customized next-gen apps, which leads to faster results and ensures better ROI. As our certified app programmers have worked on a wide variety of solutions in various verticals, we are committed to delivering unmatched quality solutions to our clients.</>,
         <>You can hire app developers at <strong>Hidden Brains</strong> on an hourly, monthly, or yearly basis, depending upon the complexity of your business requirements. Our pool of dedicated developers are offering end-to-end web and mobile app development solutions to start-ups and large-scale companies globally on flexible engagement models.</>
     ],
@@ -63,7 +63,7 @@ export const TECH_EXPERTISE: TechExpertiseItem[] = [
         title: "Hire Android App Developers",
         desc: "By hiring Android app developers at Hidden Brains UK, you can create feature-rich Android apps using Java and Kotlin languages and make them featured on Google Play.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/android.webp",
-        link: "/android-apps-development.html",
+        link: "/android-app-development",
         color: "orange"
     },
     {
@@ -77,21 +77,21 @@ export const TECH_EXPERTISE: TechExpertiseItem[] = [
         title: "Hire Cross-Platform App Developers",
         desc: "To ensure a top-notch user experience, our talented team of cross-platform app developers uses only the most cutting-edge hybrid mobile app development technologies.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/Cross-platform.png",
-        link: "/cross-platform-app-development.html",
+        link: "/cross-platform-app-development",
         color: "dark"
     },
     {
         title: "Hire Web Developers",
         desc: "You can hire full-stack web app developers, programmers, and coders through Hidden Brains UK for website development, support, and testing.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/responsive.webp",
-        link: "/hire-web-developers.html",
+        link: "/hire-web-developers",
         color: "green"
     },
     {
         title: "Hire UI/UX Designers",
         desc: "By utilizing a distinctive design strategy, user-friendly interfaces, and seamless user experiences, our talented UI/UX engineers can set your app apart from the competition.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/UI-UXDesigner.webp",
-        link: "/software-analysis-design-upgradation-services.html",
+        link: "/hire-web-developers",
         color: "yellow"
     },
     {
@@ -105,12 +105,14 @@ export const TECH_EXPERTISE: TechExpertiseItem[] = [
         title: "Hire React Native Developers",
         desc: "By shaking hands with Hidden Brains, you can easily onboard the best React Native app developers for your project and build a dynamic, feature-rich cross-platform app.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/ReactNative.png",
+        link: "/react-native-app-development-company",
         color: "green"
     },
     {
         title: "Hire Flutter App Developers",
         desc: "From custom development to Flutter App consulting, our dedicated team of Flutter app developers can provide your all-in-one solution at Hidden Brains UK.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Flutter.png",
+        link: "/flutter-app-development-company",
         color: "yellow"
     },
     {
@@ -140,14 +142,14 @@ export const APP_DEV_TECH: TechExpertiseItem[] = [
         title: "Swift App Development",
         desc: "Develop an entirely new app using Swift language or add Swift framework to an existing app using our exclusive service.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/swift.webp",
-        link: "/swift-app-development.html",
+        link: "/swift-app-development",
         color: "dark"
     },
     {
         title: "Cross-Platform Development",
         desc: "Our developers specialize in building cross platform mobile apps in accordance to client’s business needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/responsive.webp",
-        link: "/cross-platform-app-development.html",
+        link: "/cross-platform-app-development",
         color: "green"
     },
     {
@@ -161,7 +163,7 @@ export const APP_DEV_TECH: TechExpertiseItem[] = [
         title: "Xamarin App Development",
         desc: "Our decade of experience and expertise in C# enable us to develop robust Xamarin app development services",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/xamarin.webp",
-        link: "/xamarin-app-development.html",
+        link: "/xamarin-app-development",
         color: "purple"
     }
 ];

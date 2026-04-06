@@ -69,19 +69,19 @@ export const INDUSTRIES_SERVED: IndustryItem[] = [
         name: "Insurance",
         desc: "We help our clients develop their insurance business by providing them with custom applications designed to meet their specific needs. We have a team of experienced developers who are familiar with the insurance industry.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Insurance-Industries-Thumbnails.png",
-        link: "/insurance.html"
+        link: "/insurance"
     },
     {
         name: "Travel And Tourism",
         desc: "Hidden Brains UK is renowned for developing highly secure, reliable, and scalable ASP.NET solutions for travel agencies. Our experts create tailored apps for managing everything from a single point.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Travel-Hospitality-Industries-Thumbnails.png",
-        link: "//travel-hospitality"
+        link: "/travel-hospitality"
     },
     {
         name: "Logistics and Transportation",
         desc: "Hidden Brains helps organizations automate their supply chains by offering reliable ASP.NET solutions to logistics companies. We empower you with solutions that boost productivity and tracking.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/logistics-industries-thumb.jpg",
-        link: "//logistics"
+        link: "/logistics"
     },
     {
         name: "Healthcare",
@@ -93,19 +93,19 @@ export const INDUSTRIES_SERVED: IndustryItem[] = [
         name: "Retail and E-commerce",
         desc: "Hidden Brains provides end-to-end app development services to retailers. We make a bold statement with an outstanding online store that takes your brand to new heights in today's rapid environment.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/retail-industries-thumb.jpg",
-        link: "/retail.html"
+        link: "/retail"
     },
     {
         name: "Media & Entertainment",
         desc: "In the Media & Entertainment industry, it's important to have an app that is user-friendly and engaging. At Hidden Brains, we understand this and provide custom mobile app development services.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/media-industries-thumb.jpg",
-        link: "/media-and-entertainment.html"
+        link: "/media-and-entertainment"
     },
     {
         name: "Real Estate",
         desc: "Our experienced developers create custom apps for Real Estate businesses of all sizes. Whether you need an app for property listings, transactions, or payments, we have the solution.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Real-Estate-Industries-Thumbnails.png",
-        link: "//real-estate"
+        link: "/real-estate"
     }
 ];
 

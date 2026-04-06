@@ -81,13 +81,13 @@ export const HIRE_WORDPRESS_INDUSTRIES = [
         name: "Retail & Ecommerce industries",
         desc: "Taking advantage of the ideal software solution for your business is easily achieved by working with WordPress programmers who are committed to meeting or exceeding standards in safety and security when designing their solutions.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/retail-industries-thumb.jpg",
-        link: "/retail.html"
+        link: "/retail"
     },
     {
         name: "Media & Entertainment",
         desc: "In the Media & Entertainment industry, it is important to have an app that is not only user-friendly but also engaging. At Hidden Brains, we understand this and provide custom mobile app development services.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/media-industries-thumb.jpg",
-        link: "/media-and-entertainment.html"
+        link: "/media-and-entertainment"
     },
     {
         name: "Real Estate",
@@ -105,7 +105,7 @@ export const HIRE_WORDPRESS_INDUSTRIES = [
         name: "Insurance",
         desc: "We help our clients develop their insurance business by providing them with custom applications designed to meet their specific needs. We have a team of experienced developers.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Insurance-Industries-Thumbnails.png",
-        link: "/insurance.html"
+        link: "/insurance"
     },
     {
         name: "Travel & Hospitality",
@@ -123,31 +123,31 @@ export const HIRE_WORDPRESS_INDUSTRIES = [
         name: "ECommerce",
         desc: "We have a team of experienced developers who can create custom ecommerce applications tailored to your specific needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/ECommerce-Industries-Thumbnails.png",
-        link: "/ecommerce.html"
+        link: "/ecommerce"
     },
     {
         name: "Online Booking",
         desc: "If you're in the online booking industry, you know that things are constantly changing. You need an app that can keep up with the latest trends.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Online-Booking-Industries-Thumbnails.png",
-        link: "//online-booking"
+        link: "/online-booking"
     },
     {
         name: "Social Networking",
         desc: "Our team of experienced developers can create custom apps for your business. We've worked with all types of businesses in the Social Networking industry.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Social-Networking-Industries-Thumbnails.png",
-        link: "/social-networking.html"
+        link: "/social-networking"
     },
     {
         name: "Manufacturing",
         desc: "We provide app development services that can help streamline the manufacturing process and make it more efficient. We've worked with manufacturers of all sizes.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Manufacturing-Industries-Thumbnails.png",
-        link: "//manufacturing"
+        link: "/manufacturing"
     },
     {
         name: "Energy",
         desc: "The energy industry provides the power we need to live and run our businesses. We can help you develop the perfect app for your energy business.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Energy-Industries-Thumbnails.png",
-        link: "//energy"
+        link: "/energy"
     }
 ];
 

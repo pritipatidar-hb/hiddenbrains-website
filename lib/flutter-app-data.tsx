@@ -87,85 +87,85 @@ export const FLUTTER_INDUSTRIES = [
         name: "Healthcare",
         desc: "Hidden Brains UK provides mobile apps for healthcare entities, including hospitals, clinics, and doctors. The mobile solutions developed range from consultations to application maintenance and support.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/healthcare-industries-thumb.jpg",
-        link: "https://www.hiddenbrains.co.uk//healthcare"
+        link: "/healthcare"
     },
     {
         name: "Retailers and eCommerce",
         desc: "Flutter app developers build powerful e-commerce apps such as e-commerce carts & marketplaces, auctions & reverse auctions, social commerce solutions, etc.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/retail-industries-thumb.jpg",
-        link: "https://www.hiddenbrains.co.uk/retail.html"
+        link: "/retail"
     },
     {
         name: "Media & Entertainment",
         desc: "With the use of the latest trends, we provide online promotion solutions, social networking development tools, and media content distribution channels.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/media-industries-thumb.jpg",
-        link: "https://www.hiddenbrains.co.uk/media-and-entertainment.html"
+        link: "/media-and-entertainment"
     },
     {
         name: "Real Estate",
         desc: "Hidden Brains has a team of experienced developers who can create custom apps for Real Estate businesses of all sizes. Whether you need an app to help with property listings, transactions, or payments, we can develop a solution that meets your needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Real-Estate-Industries-Thumbnails.png",
-        link: "https://www.hiddenbrains.co.uk//real-estate"
+        link: "/real-estate"
     },
     {
         name: "ECommerce",
         desc: "We have a team of experienced developers who can create custom ecommerce applications tailored to your specific needs. Whether you're looking to improve your customer's experience or increase sales, we can help you achieve your goals.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/ECommerce-Industries-Thumbnails.png",
-        link: "https://www.hiddenbrains.co.uk/ecommerce.html"
+        link: "/ecommerce"
     },
     {
         name: "Online Booking",
         desc: "If you're in the online booking industry, you know that things are constantly changing. You need an app that can keep up with the latest trends and technologies. That's where Hidden Brains comes in.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Online-Booking-Industries-Thumbnails.png",
-        link: "https://www.hiddenbrains.co.uk//online-booking"
+        link: "/online-booking"
     },
     {
         name: "Social Networking",
         desc: "Our team of experienced developers can create custom apps for your business, whether it's a small business or a large enterprise. We've worked with all types of businesses in the Social Networking industry.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Social-Networking-Industries-Thumbnails.png",
-        link: "https://www.hiddenbrains.co.uk/social-networking.html"
+        link: "/social-networking"
     },
     {
         name: "Manufacturing",
         desc: "Our manufacturing software solutions help you build supply chains that are resilient and adaptive, improving efficiency and business performance. We've worked with manufacturers of all sizes.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Manufacturing-Industries-Thumbnails.png",
-        link: "https://www.hiddenbrains.co.uk//manufacturing"
+        link: "/manufacturing"
     },
     {
         name: "Education / eLearning",
         desc: "We provide Flutter-based e-learning solutions such as apps for online training, learning management systems, corporate learning portals, and online courses.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Education-ELearning-industries-thumb.png",
-        link: "https://www.hiddenbrains.co.uk/elearning.html"
+        link: "/elearning"
     },
     {
         name: "Energy",
         desc: "The energy industry provides the power we need to live and run our businesses. We can help you develop the perfect app for your energy business, whether it's a utility company or producer.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Energy-Industries-Thumbnails.png",
-        link: "https://www.hiddenbrains.co.uk//energy"
+        link: "/energy"
     },
     {
         name: "Banking & Finance",
         desc: "Being in the app development industry for a long time, we provide financial and banking software development services that increase efficiency and agility while delivering constant costs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/fintech-industries-thumb.jpg",
-        link: "https://www.hiddenbrains.co.uk//banking-finance"
+        link: "/banking-finance"
     },
     {
         name: "Insurance",
         desc: "We help our clients develop their insurance business by providing them with custom applications designed to meet their specific needs. We have a team of experienced developers.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Insurance-Industries-Thumbnails.png",
-        link: "https://www.hiddenbrains.co.uk/insurance.html"
+        link: "/insurance"
     },
     {
         name: "Travel & Hospitality",
         desc: "With over 22+ years of experience developing customer-centric, secure, and reliable solutions, we've become renowned for providing world-class services to travel agencies.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Travel-Hospitality-Industries-Thumbnails.png",
-        link: "https://www.hiddenbrains.co.uk//travel-hospitality"
+        link: "/travel-hospitality"
     },
     {
         name: "Logistics & Transport",
         desc: "Our results-oriented Flutter application development for logistics and transportation increases ROI and helps you organize and streamline daily workflows.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/logistics-industries-thumb.jpg",
-        link: "https://www.hiddenbrains.co.uk//logistics"
+        link: "/logistics"
     }
 ];
 
