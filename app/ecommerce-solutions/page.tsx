@@ -137,7 +137,7 @@ export default async function EcommerceSolutionsPage() {
                                     <Image src={box.image} alt={box.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                                 </div>
                                 <div className="p-8 flex-grow">
-                                    <div className="mb-6 w-[70px] h-[70px] bg-[#fff] absolute mt-[-64px] ml-[243px] rounded-full flex items-center justify-center text-[#f29111]">
+                                    <div className="mb-6 w-[70px] h-[70px] bg-[#fff] absolute mt-[-64px] md:ml-[243px] lg:ml-[200px] rounded-full flex items-center justify-center text-[#f29111]">
                                         <svg viewBox="0 0 64 64" fill="none" stroke="#14133b" strokeWidth="2" strokeMiterlimit="10" width="35" height="35">
                                             <path d="M1,59L22,51L42,59L63,51L63,5L42,13L22,5L1,13Z"></path>
                                             <path d="M22,5L22,51"></path>
