@@ -1,0 +1,17 @@
+export const industriesMenu = [
+  { title: "Healthcare", url: "/healthcare" },
+  { title: "Retail", url: "/retail" },
+  { title: "Logistics", url: "/logistics" },
+  { title: "Media & Entertainment", url: "/media-and-entertainment" },
+  { title: "Real Estate", url: "/real-estate" },
+  { title: "eCommerce", url: "/ecommerce" },
+  { title: "Online Booking", url: "/online-booking" },
+  { title: "Social Networking", url: "/social-networking" },
+  { title: "Manufacturing", url: "/manufacturing" },
+  { title: "Education / eLearning", url: "/elearning" },
+  { title: "Energy", url: "/energy" },
+  { title: "Fintech", url: "/fintech" },
+  { title: "Banking & Finance", url: "/banking-finance" },
+  { title: "Insurance", url: "/insurance" },
+  { title: "Travel & Hospitality", url: "/travel-hospitality" },
+];
