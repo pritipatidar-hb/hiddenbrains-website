@@ -24,6 +24,7 @@ import wareHouseBanner from "@/images/Warehouse-Management.webp"
 import { INDUSTRIES_SERVED } from "@/lib/web-app-data";
 import { WebIndustrySlider } from "@/components/shared/WebIndustrySlider";
 import { LottieAnimation } from "@/components/shared/LottieAnimation";
+import { WarehouseManagementVideo } from "@/components/warehouse-management/WarehouseManagementVideo";
 
 export const metadata = {
     title: "Warehouse Management System | Hidden Brains UK",
@@ -61,20 +62,7 @@ export default async function WarehouseManagementPage() {
                         </div>
 
                         {/* Video Implementation inside Intro */}
-                        <div className="relative   overflow-hidden shadow-2xl group cursor-pointer">
-                            <Image
-                                src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/wearhouse-Solution-YouTube-Thumbnail.webp"
-                                alt="Warehouse Solution Video"
-                                width={1200}
-                                height={675}
-                                className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                                <div className="w-20 h-20 bg-orange-500  flex items-center justify-center animate-pulse group-hover:scale-110 transition-transform shadow-lg">
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <WarehouseManagementVideo />
                     </div>
                 }
                 showHomeIcon={true}
