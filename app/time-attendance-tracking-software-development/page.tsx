@@ -28,7 +28,7 @@ import { GuideSection } from "../../components/shared/GuideSection";
 import { IndustrySlider } from "../../components/shared/IndustrySlider";
 import { UseCasesSection } from "../../components/shared/UseCasesSection";
 import { FAQSection } from "../../components/shared/FAQSection";
-
+import TimeAttendanceImage from "../../images/attendance-management-system-platform-images.webp"
 import Image from "next/image";
 import { LottieAnimation } from "../../components/shared/LottieAnimation";
 
@@ -102,9 +102,7 @@ export default async function TimeAttendancePage() {
                         <h2 className=" text-[26px] md:text-[36px] font-semibold text-[#14133b] mb-[18px]">How does Attendance Tracking Systems Work</h2>
                     </div>
 
-                    {/* <div className="max-w-6xl mx-auto flex justify-center overflow-visible">
-                        <ProcessDiagram data={TIME_ATTENDANCE_PROCESS} />
-                    </div> */}
+
                     <div className="mx-auto max-w-6xl">
                         <LottieAnimation
                             animationUrl="/json/Attendance-solution-bus-imp-life-V02.json"
@@ -124,7 +122,7 @@ export default async function TimeAttendancePage() {
                 title="Platforms & Integrations"
                 description="Providing consistent experiences and addressing the unique needs of each and every platform."
                 image={{
-                    src: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/attendance-management-system-platform-images.webp",
+                    src: TimeAttendanceImage.src,
                     width: 875,
                     height: 462,
                     alt: "attendance-management-system"

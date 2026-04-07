@@ -11,4 +11,5 @@ export interface UseCasesSectionProps {
     description: string;
     items: UseCaseItem[];
     bgColor?: string;
+    imageStyle?: 'contain' | 'cover';
 }

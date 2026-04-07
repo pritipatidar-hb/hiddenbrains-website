@@ -191,3 +191,21 @@ export const WAREHOUSE_FAQ = [
         answer: "Yes, our solution supports tracking inventory across multiple geographic locations and provides currency conversion for international operations."
     }
 ];
+
+export const WAREHOUSE_USE_CASES = [
+    {
+        title: "Logistics",
+        description: "Demand and supply changes can be efficiently managed by our warehouse management systems (WMS). For logistics organizations, an efficient WMS guarantees greater inventory control and product management.",
+        image: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-d591ddb/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/usecase-box-smart-logisitic-03.jpg"
+    },
+    {
+        title: "Agriculture",
+        description: "Large-scale preservation of items occurs in agriculture and food delivery from the point of purchase till the point of usage. Our warehouse and inventory management solutions provide real-time visibility into their stock to agribusinesses.",
+        image: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-d591ddb/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/usecase-box-img-agriculture-01.jpg"
+    },
+    {
+        title: "Manufacturing",
+        description: "Manufacturing organizations can utilize warehouse management solutions to guarantee that raw materials are available for production and to maintain inventory levels that satisfy the demands of their clients.",
+        image: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-d591ddb/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/usecase-box-smart-manufacturing-02.jpg"
+    }
+];

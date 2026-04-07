@@ -11,7 +11,7 @@ import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { GuideSection } from "@/components/shared/GuideSection";
 import { IndustrySlider } from "@/components/shared/IndustrySlider";
 import { ClientLogos } from "@/components/home/ClientLogos";
-
+import smartEstatePlatform from "@/images/smart-estate-platform.webp";
 import smartEstateBanner from "@/images/Warehouse-Management.webp";
 
 import {
@@ -27,6 +27,9 @@ import {
     SMART_ESTATE_FAQ,
 } from "@/lib/gated-community-data";
 import { LottieAnimation } from "@/components/shared/LottieAnimation";
+import { UseCasesSection } from '@/components/shared/UseCasesSection';
+import { WAREHOUSE_USE_CASES } from '@/lib/warehouse-management-data';
+import { GatedCommunityVideo } from "@/components/gated-community/GatedCommunityVideo";
 
 export const metadata = {
     title: "Gated Community Access Control System | Smart Estate | Hidden Brains UK",
@@ -139,21 +142,7 @@ export default async function SmartEstatePage() {
                             </p>
                         </div>
 
-                        {/* Video Thumbnail */}
-                        <div className="relative   overflow-hidden shadow-2xl group cursor-pointer">
-                            <Image
-                                src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/SmartEstate-YouTube-Thumbnail.jpg"
-                                alt="SmartEstate HiddenBrains Video"
-                                width={871}
-                                height={490}
-                                className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                                <div className="w-20 h-20 bg-orange-500  flex items-center justify-center animate-pulse group-hover:scale-110 transition-transform shadow-lg">
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <GatedCommunityVideo />
                     </div>
                 }
                 showHomeIcon={true}
@@ -248,30 +237,9 @@ export default async function SmartEstatePage() {
                             How does Gated Community Access Control Works
                         </h2>
                     </div>
-              {/* lottie animation */}
-              <div className="max-w-5xl mx-auto">
-                {/* <LottieAnimation animationData={} /> */}
-              </div>
-                    {/* <div className="max-w-5xl mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                            {HOW_IT_WORKS_STEPS.map((step, index) => (
-                                <div key={index} className="flex flex-col items-center text-center group">
-                                    <div className="relative mb-6">
-                                        <div className="w-20 h-20 rounded-full border-2 border-blue-600 bg-blue-50 flex items-center justify-center shadow group-hover:bg-blue-600 transition-colors duration-500">
-                                            <div className="group-hover:[&_svg]:text-white transition-colors duration-500">
-                                                {stepIcons[index]}
-                                            </div>
-                                        </div>
-                                        <span className="absolute -top-2 -right-2 w-7 h-7 bg-orange-500 rounded-full text-white text-xs font-black flex items-center justify-center">
-                                            {step.step}
-                                        </span>
-                                    </div>
-                                    <h3 className="text-lg font-bold text-slate-900 mb-2">{step.title}</h3>
-                                    <p className="text-slate-600 text-sm leading-relaxed">{step.desc}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div> */}
+                    {/* lottie animation */}
+                    <div className="max-w-5xl mx-auto">
+                    </div>
                 </div>
             </section>
 
@@ -385,7 +353,7 @@ export default async function SmartEstatePage() {
 
                     <div className=" mx-auto rounded-2xl overflow-hidden shadow-lg">
                         <Image
-                            src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/smart-estate-platform.webp"
+                            src={smartEstatePlatform}
                             alt="smart-estate-platform"
                             width={1201}
                             height={661}
@@ -426,48 +394,13 @@ export default async function SmartEstatePage() {
             </section>
 
             {/* Use Cases */}
-            <section className="py-[50px] bg-[#f7f7f7]">
-                <div className="container px-6 mx-auto max-w-7xl">
-                    <div className=" mx-auto text-center mb-[40px]">
-                        <h2 className=" text-[26px] md:text-[36px] font-semibold
- font-black text-slate-900 mb-[18px]">
-                            Use Cases
-                        </h2>
-                        <p className="text-[#6a7c92] text-[16px] md:text-lg font-regular leading-relaxed">
-                            Hidden Brains UK has tailored the WMS technology solutions to successfully address industry-specific issues and improve the supply chain management process.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {SMART_ESTATE_USE_CASES.map((item, idx) => (
-                            <div
-                                key={idx}
-                                className="group relative overflow-hidden  shadow-md hover:shadow-xl transition-shadow duration-500 cursor-pointer"
-                            >
-                                <div className="relative h-64 overflow-hidden">
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        fill
-                                        className="object-cover group-hover:scale-110 transition-transform duration-700"
-                                        sizes="(max-width: 768px) 100vw, 33vw"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                                </div>
-
-                                <div className="absolute inset-0 flex flex-col justify-end p-6">
-                                    <h3 className="text-white text-2xl font-bold mb-2 drop-shadow">
-                                        {item.title}
-                                    </h3>
-                                    <p className="text-white/80 text-sm leading-relaxed max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 overflow-hidden">
-                                        {item.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <UseCasesSection
+                title="Use Cases"
+                description="Hidden Brains UK has tailored the WMS technology solutions to successfully address industry-specific issues and improve the supply chain management process."
+                items={WAREHOUSE_USE_CASES}
+                bgColor="bg-slate-50"
+                imageStyle="cover"
+            />
 
             {/* Testimonials */}
             <TestimonialsSection testimonials={data.TESTIMONIALS} />

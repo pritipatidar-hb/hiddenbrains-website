@@ -9,7 +9,8 @@ import {
     WAREHOUSE_SOLUTIONS,
     TECHNOLOGY_EXPERTISE,
     WAREHOUSE_STEPS,
-    WAREHOUSE_FAQ
+    WAREHOUSE_FAQ,
+    WAREHOUSE_USE_CASES
 } from "@/lib/warehouse-management-data";
 
 
@@ -25,6 +26,8 @@ import { INDUSTRIES_SERVED } from "@/lib/web-app-data";
 import { WebIndustrySlider } from "@/components/shared/WebIndustrySlider";
 import { LottieAnimation } from "@/components/shared/LottieAnimation";
 import { WarehouseManagementVideo } from "@/components/warehouse-management/WarehouseManagementVideo";
+import { UseCasesSection } from "@/components/shared/UseCasesSection";
+import warehousePlatformImage from "@/images/assist-platforms-Integrations.webp";
 
 export const metadata = {
     title: "Warehouse Management System | Hidden Brains UK",
@@ -378,7 +381,7 @@ export default async function WarehouseManagementPage() {
                     {/* Integration Image */}
                     <div className="max-w-5xl mx-auto mb-16">
                         <Image
-                            src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/assist-platforms-Integrations.webp"
+                            src={warehousePlatformImage}
                             alt="Platforms & Integrations - Warehouse & Inventory Management System"
                             width={1244}
                             height={496}
@@ -535,86 +538,15 @@ export default async function WarehouseManagementPage() {
                 </div>
             </section>
 
-            {/* Use Cases Section */}
-            <section className="py-[50px] bg-slate-50">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    {/* Header */}
-                    <div className="text-center mb-14">
-                        <h2 className=" text-[26px] md:text-[36px] font-semibold
- font-black text-slate-900 mb-4">Use Cases</h2>
-                        <p className="max-w-3xl mx-auto text-slate-600  text-[16px] md:text-lg leading-relaxed">
-                            Hidden Brains UK has tailored the WMS technology solutions to successfully address industry-specific issues and improve the supply chain management process.
-                        </p>
-                    </div>
+            <UseCasesSection 
+                title="Use Cases"
+                description="Hidden Brains UK has tailored the WMS technology solutions to successfully address industry-specific issues and improve the supply chain management process."
+                items={WAREHOUSE_USE_CASES}
+                bgColor="bg-slate-50"
+                imageStyle="cover"
+            />
 
-                    {/* Cards Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                        {/* Card: Logistics */}
-                        <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
-                            <div className="relative h-56 overflow-hidden">
-                                <Image
-                                    src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/usecase-box-smart-logisitic-03.jpg"
-                                    alt="Logistics - Warehouse & Inventory Management System"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                            </div>
-                            <div className="p-7">
-                                <h3 className="text-xl font-bold text-slate-900 mb-3">Logistics</h3>
-                                <p className="text-slate-600 text-sm leading-relaxed">
-                                    Demand and supply changes can be efficiently managed by our warehouse management systems (WMS). For logistics organizations, an efficient WMS guarantees greater inventory control and product management.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Card: Agriculture */}
-                        <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
-                            <div className="relative h-56 overflow-hidden">
-                                <Image
-                                    src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/usecase-box-img-agriculture-01.jpg"
-                                    alt="Agriculture - Warehouse & Inventory Management System"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                            </div>
-                            <div className="p-7">
-                                <h3 className="text-xl font-bold text-slate-900 mb-3">Agriculture</h3>
-                                <p className="text-slate-600 text-sm leading-relaxed">
-                                    Large-scale preservation of items occurs in agriculture and food delivery from the point of purchase till the point of usage. Our warehouse and inventory management solutions provide real-time visibility into their stock to agribusinesses.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Card: Manufacturing */}
-                        <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
-                            <div className="relative h-56 overflow-hidden">
-                                <Image
-                                    src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/usecase-box-smart-manufacturing-02.jpg"
-                                    alt="Manufacturing - Warehouse & Inventory Management System"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                            </div>
-                            <div className="p-7">
-                                <h3 className="text-xl font-bold text-slate-900 mb-3">Manufacturing</h3>
-                                <p className="text-slate-600 text-sm leading-relaxed">
-                                    Manufacturing organizations can utilize warehouse management solutions to guarantee that raw materials are available for production and to maintain inventory levels that satisfy the demands of their clients.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            {/* Portfolio Section */}
-            {/* <PortfolioSection
-                subtitle={data.HOME_CONTENT.PORTFOLIO_SECTION.subtitle}
-                title={data.HOME_CONTENT.PORTFOLIO_SECTION.title}
-                description={data.HOME_CONTENT.PORTFOLIO_SECTION.description}
-                projects={data.PROJECTS}
-            /> */}
 
             {/* Testimonials */}
             <TestimonialsSection testimonials={data.TESTIMONIALS} />

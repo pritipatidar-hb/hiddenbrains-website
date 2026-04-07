@@ -26,6 +26,7 @@ import { IndustrySlider } from "../../components/shared/IndustrySlider";
 import { FAQSection } from "../../components/shared/FAQSection";
 import Image from "next/image";
 import { LottieAnimation } from "@/components/shared/LottieAnimation";
+import { CmmsVideo } from "@/components/cmms/CmmsVideo";
 
 export const metadata = {
     title: "CMMS Solution - Smart Maintenance Software | Hidden Brains UK",
@@ -55,20 +56,7 @@ export default async function CMMSPage() {
                             {CMMS_INTRODUCTION.content}
                         </div>
 
-                        <div className="relative  overflow-hidden shadow-2xl group cursor-pointer">
-                            <Image
-                                src={CMMS_INTRODUCTION.videoBanner}
-                                alt="CMMS Solution Video"
-                                width={1200}
-                                height={675}
-                                className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                                <div className="w-20 h-20 bg-orange-500  flex items-center justify-center animate-pulse group-hover:scale-110 transition-transform shadow-lg">
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <CmmsVideo />
                     </div>
                 }
                 showHomeIcon={true}

@@ -8,7 +8,9 @@ import { TestimonialsSection } from "../../components/home/TestimonialsSection";
 import { FAQSection } from "../../components/shared/FAQSection";
 import { GuideSection } from "../../components/shared/GuideSection";
 import { LottieAnimation } from "../../components/shared/LottieAnimation";
-
+import { SosSolutionVideo } from "../../components/sos-solution/SosSolutionVideo";
+import { UseCasesSection } from "../../components/shared/UseCasesSection";
+import sosImage from "../../images/sos-platform-image.webp";
 import Contact from "../../components/layout/Contact";
 // @ts-ignore
 import sosBanner from "../../images/sos.webp";
@@ -104,20 +106,7 @@ export default async function SOSSolutionPage() {
                         </p>
 
                         {/* Video Thumbnail */}
-                        <div className="relative  overflow-hidden shadow-2xl group cursor-pointer mt-8">
-                            <Image
-                                src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/SOS-Solution-video-thumbnail-new.webp"
-                                alt="SOS Solutions HiddenBrains Video"
-                                width={871}
-                                height={490}
-                                className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                                <div className="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center animate-pulse group-hover:scale-110 transition-transform shadow-lg">
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <SosSolutionVideo />
                     </div>
                 }
                 showHomeIcon={true}
@@ -214,7 +203,7 @@ export default async function SOSSolutionPage() {
                     <div className="flex flex-col items-center">
                         <div className="relative w-full max-w-4xl h-64 md:h-96 rounded-2xl overflow-hidden mb-16">
                             <Image
-                                src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/sos-platform-image.webp"
+                                src={sosImage}
                                 alt="SOS - Smart Alerting Solution for Emergencies"
                                 fill
                                 className="object-cover md:object-contain object-center"
@@ -261,48 +250,17 @@ export default async function SOSSolutionPage() {
 
 
             {/* Use Cases */}
-            <section className="py-[50px] bg-[#f7f7f7]">
-                <div className="container px-6 mx-auto max-w-7xl">
-                    <div className=" mx-auto text-center mb-[30px]">
-                        <h2 className="text-[26px] md:text-[36px] font-semibold text-[#14133b] mb-[18px]">
-                            Use Cases of SOS Emergency App Solution
-                        </h2>
-                        <p className="text-[#6a7c92] text-[16px] md:text-[19px] font-normal leading-relaxed">
-                            With a variety of applications in various facets, you may avoid, be ready for, react to, and recover from anything with SOS app development.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {SOS_USE_CASES.map((item: any, idx: number) => (
-                            <div
-                                key={idx}
-                                className="bg-white  shadow-sm hover:shadow-xl transition-shadow duration-500 overflow-hidden group border border-slate-100 flex flex-col h-full"
-                            >
-                                <div className=" flex justify-center">
-                                    <div className="relative w-full h-48">
-                                        <Image
-                                            src={item.image}
-                                            alt={item.title}
-                                            fill
-                                            className="object-contain group-hover:scale-110 transition-transform duration-500"
-                                            sizes="(max-width: 768px) 192px, 192px"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="p-8 pt-6 flex flex-col flex-1 text-center">
-                                    <h3 className="text-[#14133b] text-xl font-bold mb-4 group-hover:text-red-500 transition-colors">
-                                        {item.title}
-                                    </h3>
-                                    <p className="text-[#6a7c92] text-sm leading-relaxed flex-1">
-                                        {item.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <UseCasesSection
+                title="Use Cases of SOS Emergency App Solution"
+                description="With a variety of applications in various facets, you may avoid, be ready for, react to, and recover from anything with SOS app development."
+                items={SOS_USE_CASES.map(item => ({
+                    title: item.title,
+                    description: item.desc,
+                    image: item.image
+                }))}
+                bgColor="bg-[#f7f7f7]"
+                imageStyle="contain"
+            />
 
             {/* Testimonials */}
             <TestimonialsSection testimonials={data.TESTIMONIALS} />
