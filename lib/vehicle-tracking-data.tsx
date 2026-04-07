@@ -342,7 +342,7 @@ export const TECHNOLOGY_EXPERTISE = [
     {
         title: "CodeIgniter Development",
         description: "By choosing to partner with Hidden Brains, you can develop full-featured and high-performance web applications using CodeIgniter.",
-        url: "/codeigniter-development-services.html"
+        url: "/codeigniter-development-services"
     }
 ];
 

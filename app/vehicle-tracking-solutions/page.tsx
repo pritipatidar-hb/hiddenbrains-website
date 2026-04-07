@@ -21,10 +21,13 @@ import {
 import { ProcessDiagram } from "../components/vehicle-tracking/ProcessDiagram";
 import { BenefitsSection } from "../components/BenefitsSection";
 import { AlertsSection } from "../components/vehicle-tracking/AlertsSection";
+import { VehicleTrackingVideo } from "../../components/vehicle-tracking/VehicleTrackingVideo";
 import { PlatformsSection } from "../../components/shared/PlatformsSection";
 import { GuideSection } from "../../components/shared/GuideSection";
 import { IndustrySlider } from "../../components/shared/IndustrySlider";
 import { FAQSection } from "../../components/shared/FAQSection";
+import VEHICLE_TRACKING_BANNER from "../../images/vehicaltracking.webp";
+import VEHICLE_TRACKING_PLATFORM_IMAGE from "../../images/Vehical-tracking-platform-image.webp";
 import Image from "next/image";
 
 export const metadata = {
@@ -38,7 +41,7 @@ export default async function VehicleTrackingPage() {
     return (
         <div className="min-h-screen bg-white">
             <HeroSection
-                banner="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/Vehical-Tracking-video-thumbnail.webp"
+                banner={VEHICLE_TRACKING_BANNER}
                 alt="Vehicle Tracking Solutions"
                 title={VEHICLE_TRACKING_HERO.title}
                 description={VEHICLE_TRACKING_HERO.description}
@@ -59,20 +62,7 @@ export default async function VehicleTrackingPage() {
                             </p>
                         </div>
 
-                        <div className="relative  overflow-hidden shadow-2xl group cursor-pointer">
-                            <Image
-                                src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/Vehical-Tracking-video-thumbnail.webp"
-                                alt="Vehicle Tracking Solutions Video"
-                                width={1200}
-                                height={675}
-                                className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                                <div className="w-20 h-20 bg-orange-500  flex items-center justify-center animate-pulse group-hover:scale-110 transition-transform shadow-lg">
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <VehicleTrackingVideo />
                     </div>
                 }
                 showHomeIcon={true}
@@ -166,9 +156,9 @@ export default async function VehicleTrackingPage() {
                 title="Platforms & Integrations"
                 description="Providing consistent experiences and addressing the unique needs of each and every platform."
                 image={{
-                    src: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/Vehical-tracking-platform-image-2.webp",
-                    width: 850,
-                    height: 449,
+                    src: VEHICLE_TRACKING_PLATFORM_IMAGE.src,
+                    width: VEHICLE_TRACKING_PLATFORM_IMAGE.width,
+                    height: VEHICLE_TRACKING_PLATFORM_IMAGE.height,
                     alt: "Vehicle Tracking Platforms"
                 }}
                 techPlatforms={VEHICLE_TRACKING_PLATFORMS}
