@@ -36,7 +36,7 @@ export const SmartGasVideo = () => {
             <VideoModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                videoUrl="https://www.youtube.com/watch?v=RewqM1WFJzI"
+                videoUrl="https://www.youtube.com/watch?v=bLd4q0bptGM&t=2s"
             />
         </>
     );

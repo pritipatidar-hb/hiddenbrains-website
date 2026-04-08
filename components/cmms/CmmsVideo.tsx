@@ -36,7 +36,7 @@ export const CmmsVideo = () => {
             <VideoModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                videoUrl="https://www.youtube.com/watch?v=RewqM1WFJzI"
+                videoUrl="https://www.youtube.com/watch?v=tJSKX8gbI10&t=1s"
             />
         </>
     );
