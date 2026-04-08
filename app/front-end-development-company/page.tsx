@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { ChevronRight } from "lucide-react";
 import bannerImage from "@/images/web-design-development.webp";
 
@@ -54,12 +55,13 @@ export default async function FrontEndDevelopmentPage() {
                         <p className=" text-[16px] md:text-[18px] text-gray-200 mb-[25px] md:leading-[30px] max-w-[610px] font-normal pr-10">
                             Our Front-End Developers are extensively evaluated to ensure they are able to bring the skills necessary to meet the needs of your project. Our Front-End Developers have technical know-how in complex projects in the realm of multiple disciplines, technologies, and technology platforms.
                         </p>
-                        <Link
+                        <Button
                             href="/contact"
-                            className="inline-block px-7 py-3 bg-[#f29111] hover:bg-[#e08b1a] text-white font-medium rounded-sm transition-all text-[15px] uppercase tracking-wider"
+                            variant="primary"
+                            className="px-7 py-3 rounded-sm uppercase tracking-wider"
                         >
                             Get In Touch
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -119,12 +121,13 @@ export default async function FrontEndDevelopmentPage() {
                                     <p className="text-[#6a7c92] text-[15px] font-normal leading-relaxed mb-8 flex-grow">
                                         {tech.desc}
                                     </p>
-                                    <Link
+                                    <Button
                                         href={tech.link || "#"}
-                                        className="inline-flex items-center !text-[#14133b] font-semibold uppercase text-[13px] tracking-widest mt-auto group/btn"
+                                        variant="ghost"
+                                        className="inline-flex items-center !text-[#14133b] font-semibold uppercase text-[13px] tracking-widest mt-auto group/btn px-0"
                                     >
                                         EXPLORE <span className="ml-4 w-8 h-[2px] bg-[#14133b] group-hover/btn:w-12 transition-all duration-300"></span>
-                                    </Link>
+                                    </Button>
                                 </div>
                             );
                         })}

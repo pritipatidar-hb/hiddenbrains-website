@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 
 import { Award } from "@/types/components/HomeView";
 import { AwardsSectionProps } from '@/types/components/home/AwardsSection';
@@ -25,7 +26,7 @@ export const AwardsSection = ({ subtitle, title, description, awards }: AwardsSe
                     ))}
                 </div>
                 <div className="text-center">
-                    <Link href="/awards-accolades" className="inline-flex items-center px-8 py-3 md:px-10 bg-[#f49b1e] text-white font-bold rounded-lg shadow-sm hover:bg-[#e08b1a] transition-all duration-300 text-sm md:text-base">View Our Awards</Link>
+                    <Button href="/awards-accolades" variant="primary" size="lg" className="inline-flex items-center !text-white font-bold rounded-lg shadow-sm text-sm md:text-base">View Our Awards</Button>
                 </div>
             </div>
         </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { CtaSectionProps } from '@/types/components/shared/CtaSection';
 
 
@@ -19,12 +19,13 @@ export const CtaSection: React.FC<CtaSectionProps> = ({
                     </h3>
                 </div>
                 <div className="md:w-1/3 text-center md:text-right">
-                    <Link
+                    <Button
                         href={buttonLink}
-                        className="inline-block py-[10px] px-[30px] bg-[#f29111] hover:bg-orange-600 !text-white font-medium text-[17px] rounded-[5px] capitalize transition-all  tracking-widest shadow-lg shadow-orange-500/20"
+                        variant="primary"
+                        className="inline-block py-[10px] px-[30px] !text-white font-medium text-[17px] rounded-[5px] capitalize tracking-widest shadow-lg shadow-orange-500/20"
                     >
                         {buttonText}
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </aside>

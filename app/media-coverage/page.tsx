@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import dynamic from 'next/dynamic';
 import { HeroSection } from "@/components/shared/HeroSection";
 import { MEDIA_COVERAGE_ITEMS, MEDIA_COVERAGE_HERO } from "@/lib/media-coverage-data";
@@ -54,17 +55,17 @@ export default async function MediaCoveragePage() {
                                     </p>
 
                                     <div className="text-center mt-auto">
-                                        <Link
+                                        <Button
                                             href={item.pdfLink}
+                                            variant="outline"
                                             target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center justify-center px-8 py-3 border border-gray-200 !text-[#14133b] font-semibold text-sm uppercase tracking-wider rounded-sm transition-all duration-300 hover:bg-[#f29111] hover:border-[#f29111] hover:text-white"
+                                            className="px-8 py-3 !text-[#14133b] font-semibold text-sm uppercase tracking-wider rounded-sm hover:bg-[#f29111] hover:border-[#f29111] hover:text-white"
                                         >
                                             View PDF
                                             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                             </svg>
-                                        </Link>
+                                        </Button>
                                     </div>
                                 </div>
                             </div>

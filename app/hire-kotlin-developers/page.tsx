@@ -24,6 +24,7 @@ import {
 } from "@/lib/hire-kotlin-data";
 import { HIRE_MOBILE_PROCESS, HIRE_MOBILE_INDUSTRIES } from "@/lib/hire-mobile-apps-data";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { ProcessSection } from "@/components/shared/ProcessSection";
 import { ClipboardList, CloudCog, PencilRuler, Rocket, Smartphone } from "lucide-react";
 
@@ -203,12 +204,14 @@ export default async function HireKotlinDevelopersPage() {
                                         </li>
                                     ))}
                                 </ul>
-                                <Link
+                                <Button
                                     href="/contact"
-                                    className={`inline-block w-full py-4 rounded-xl font-bold transition-all text-center ${model.active ? 'bg-[#f29111] text-white hover:bg-orange-600 shadow-lg shadow-orange-200' : 'border-2 border-[#f29111] !text-[#f29111] hover:bg-[#f29111] hover:text-white'}`}
+                                    variant={model.active ? "primary" : "outline"}
+                                    fullWidth
+                                    className={`py-4 rounded-xl font-bold transition-all text-center ${!model.active ? 'border-2 border-[#f29111] !text-[#f29111] hover:bg-[#f29111] hover:text-white' : 'hover:bg-orange-600 shadow-lg shadow-orange-200'}`}
                                 >
                                     Hire Now
-                                </Link>
+                                </Button>
                             </div>
                         ))}
                     </div>

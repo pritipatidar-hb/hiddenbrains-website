@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import qaImage from "@/images/qa-engineers-Banner.webp";
 
 import { getData } from "@/lib/data";
@@ -172,12 +173,13 @@ export default async function QaTestingServicesPage() {
 
             {/* CTA Section */}
             <div className="py-[30px] flex justify-center">
-                <Link
+                <Button
                     href="/portfolio"
-                    className="inline-flex items-center px-10 py-3 bg-[#f29111] text-white font-medium rounded-full hover:bg-[#e08b1a] transition-colors text-[16px]"
+                    variant="primary"
+                    className="px-10 py-3 rounded-full text-[16px]"
                 >
                     View Our Work <span className="ml-2">›</span>
-                </Link>
+                </Button>
             </div>
 
             {/* Portfolio Section */}
