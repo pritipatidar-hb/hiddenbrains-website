@@ -106,7 +106,7 @@ export default async function EmergingTechnologyServicesPage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {EMERGING_SERVICES.map((service, index) => (
                             <div key={index} className="bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group rounded-md overflow-hidden flex flex-col p-[35px]">
-                                <div className="h-[50px] w-[50px] relative  bg-gray-100 mb-[15px]">
+                                <div className="h-[50px] w-[50px] relative   mb-[15px]">
                                     <Image src={service.image} alt={service.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
                                 <div className=" flex-1 flex flex-col justify-between">

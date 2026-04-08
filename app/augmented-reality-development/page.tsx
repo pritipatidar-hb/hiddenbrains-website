@@ -46,7 +46,7 @@ export default async function AugmentedRealityDevelopmentPage() {
                 ]}
                 title={AR_INTRO.title}
                 content={(
-                    <div className="space-y-6 text-[#6a7c92]">
+                    <div className="space-y-4 text-[#6a7c92]">
                         {AR_INTRO.content.map((p, i) => (
                             <p key={i}>{p}</p>
                         ))}

@@ -50,8 +50,8 @@ export default async function CMMSPage() {
                 title={CMMS_INTRODUCTION.title}
                 content={
                     <div className="space-y-12">
-                        <div className="space-y-6">
-                            <h3 className="text-2xl font-bold text-slate-900">{CMMS_INTRODUCTION.subtitle}</h3>
+                        <div className="space-y-4">
+                            <h3 className="text-[18px] font-bold text-slate-900">{CMMS_INTRODUCTION.subtitle}</h3>
                             {CMMS_INTRODUCTION.content}
                         </div>
 

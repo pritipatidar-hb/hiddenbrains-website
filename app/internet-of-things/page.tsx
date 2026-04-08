@@ -44,7 +44,7 @@ export default async function InternetOfThingsPage() {
                 ]}
                 title={IOT_INTRO.title}
                 content={(
-                    <div className="space-y-6 text-[#6a7c92]">
+                    <div className="space-y-4 text-[#6a7c92]">
                         {IOT_INTRO.content.map((p, i) => (
                             <p key={i}>{p}</p>
                         ))}

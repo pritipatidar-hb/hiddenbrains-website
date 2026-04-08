@@ -128,13 +128,13 @@ export default async function QaTestingServicesPage() {
             </section>
 
             {/* Offerings Section */}
-            <section className="py-[100px] bg-white">
+            <section className="pt-[100px] bg-white">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {QA_OFFERINGS.map((offering, index) => (
                             <div key={index} className="flex flex-col bg-white shadow-[0_0_20px_rgba(0,0,0,0.05)] rounded-sm overflow-hidden group">
                                 {/* Image Container */}
-                                <div className="relative h-[220px] overflow-hidden">
+                                <div className="relative h-[220px]">
                                     <img
                                         src={offering.image}
                                         alt={offering.title}
@@ -150,9 +150,11 @@ export default async function QaTestingServicesPage() {
 
                                 {/* Content Container */}
                                 <div className="pt-12 pb-10 px-8 flex flex-col items-center flex-grow">
-                                    <h3 className="text-[22px] font-bold text-[#14133b] mb-8 text-center">
+                                    <div className='w-full text-left'>
+                                    <h3 className="text-[22px] font-bold text-[#14133b] mb-8 ">
                                         {offering.title}
                                     </h3>
+                                    </div>
                                     <ul className="space-y-4 w-full">
                                         {offering.items.map((item, idx) => (
                                             <li key={idx} className="flex items-start text-[#6a7c92] text-[15px] leading-relaxed">

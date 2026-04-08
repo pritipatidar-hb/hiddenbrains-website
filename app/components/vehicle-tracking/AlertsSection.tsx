@@ -6,7 +6,7 @@ export const AlertsSection = () => {
         <section className="py-[50px] bg-white">
             <div className="container px-6 mx-auto max-w-7xl">
                 <div className=" mx-auto text-center mb-[30px]">
-                    <h2 className="text-[36px] font-semibold text-[#14133b] mb-[18px]">
+                    <h2 className=" text-[26px] md:text-[36px] font-semibold text-[#14133b] mb-[18px]">
                         Our Vehicle Tracking and Management Solution is designed to offer complete notifications to ensure vehicle and trip safety.
                     </h2>
                 </div>
