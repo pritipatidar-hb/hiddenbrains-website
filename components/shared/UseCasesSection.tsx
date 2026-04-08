@@ -10,7 +10,8 @@ export const UseCasesSection = ({
     title,
     description,
     items,
-    bgColor = "bg-[#f7f7f7]"
+    bgColor = "bg-[#f7f7f7]",
+    imageStyle = "contain"
 }: UseCasesSectionProps) => {
     return (
         <section className={`py-[50px] ${bgColor}`}>
@@ -30,17 +31,28 @@ export const UseCasesSection = ({
                             key={idx}
                             className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-500 overflow-hidden group border border-slate-100 flex flex-col h-full"
                         >
-                            <div className="p-8 pb-0 flex justify-center">
-                                <div className="relative w-full h-48">
+                            {imageStyle === 'contain' ? (
+                                <div className="p-8 pb-0 flex justify-center">
+                                    <div className="relative w-full h-48">
+                                        <Image
+                                            src={item.image}
+                                            alt={item.title}
+                                            fill
+                                            className="object-contain group-hover:scale-110 transition-transform duration-500"
+                                            sizes="(max-width: 768px) 192px, 192px"
+                                        />
+                                    </div>
+                                </div>
+                            ) : (
+                                <div className="relative h-56 overflow-hidden">
                                     <Image
                                         src={item.image}
-                                        alt={item.title}
+                                        alt={`${item.title}`}
                                         fill
-                                        className="object-contain group-hover:scale-110 transition-transform duration-500"
-                                        sizes="(max-width: 768px) 192px, 192px"
+                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
                                 </div>
-                            </div>
+                            )}
 
                             <div className="p-8 pt-6 flex flex-col flex-1 text-center">
                                 <h3 className="text-[#14133b] text-xl font-bold mb-4 group-hover:text-orange-500 transition-colors">

@@ -62,25 +62,25 @@ export const INDUSTRIES_SERVED: IndustryItem[] = [
         name: "Banking & Finance",
         desc: "As a leading software development company in the UK, we provide custom banking & financial software solutions to increase operational efficiency and streamline functionality. Our prime focus is to modernize the banking process.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/fintech-industries-thumb.jpg",
-        link: "//banking-finance"
+        link: "/banking-finance"
     },
     {
         name: "Insurance",
         desc: "We help our clients develop their insurance business by providing them with custom applications designed to meet their specific needs. We have a team of experienced developers who are familiar with the insurance industry and can provide you with the best possible solution for your business.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Insurance-Industries-Thumbnails.png",
-        link: "/insurance.html"
+        link: "/insurance"
     },
     {
         name: "Travel & Hospitality",
         desc: "With our agile and reliable software development services, you can increase the return on investment for your travel business and reduce the operational costs to help make it more profitable.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Travel-Hospitality-Industries-Thumbnails.png",
-        link: "//travel-hospitality"
+        link: "/travel-hospitality"
     },
     {
         name: "Logistics & Transport",
         desc: "Utilize our deep knowledge of industry sectors to build digital solutions that simplify mobile and complicated business problems, and make it easier for you to grow your business. What are you waiting for? Get in touch with us to hire a mobile app developer.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/logistics-industries-thumb.jpg",
-        link: "//logistics"
+        link: "/logistics"
     },
     {
         name: "Healthcare",
@@ -92,55 +92,55 @@ export const INDUSTRIES_SERVED: IndustryItem[] = [
         name: "Retail",
         desc: "We design and build robust custom solutions for e-commerce websites, such as e-carts, marketplaces, social commerce, auction sites, and more. Our custom-tailored retail solutions help you to streamline your business processes and increase your ROI.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/retail-industries-thumb.jpg",
-        link: "/retail.html"
+        link: "/retail"
     },
     {
         name: "Media & Entertainment",
         desc: "We offer tailor-made solutions to the media and entertainment industries, which include online promotion solutions, social networking development tools, and the distribution of media content using the latest trends.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/media-industries-thumb.jpg",
-        link: "/media-and-entertainment.html"
+        link: "/media-and-entertainment"
     },
     {
         name: "Real Estate",
         desc: "Hidden Brains has a team of experienced developers who can create custom apps for Real Estate businesses of all sizes. Whether you need an app to help with property listings, transactions, or payments, we can develop a solution that meets your needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Real-Estate-Industries-Thumbnails.png",
-        link: "//real-estate"
+        link: "/real-estate"
     },
     {
         name: "ECommerce",
         desc: "We have a team of experienced developers who can create custom ecommerce applications tailored to your specific needs. Whether you're looking to improve your customer's experience or increase sales, we can help you achieve your goals. Our team will work with you to create an app that meets your specific needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/ECommerce-Industries-Thumbnails.png",
-        link: "/ecommerce.html"
+        link: "/ecommerce"
     },
     {
         name: "Online Booking",
         desc: "If you're in the online booking industry, you know that things are constantly changing. You need an app that can keep up with the latest trends and technologies. That's where Hidden Brains comes in. We provide app development services for the online booking industry, so you can focus on what you do best - running your business.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Online-Booking-Industries-Thumbnails.png",
-        link: "//online-booking"
+        link: "/online-booking"
     },
     {
         name: "Social Networking",
         desc: "Our team of experienced developers can create custom apps for your business, whether it's a small business or a large enterprise. We've worked with all types of businesses in the Social Networking industry, so we know what it takes to create a successful app.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Social-Networking-Industries-Thumbnails.png",
-        link: "/social-networking.html"
+        link: "/social-networking"
     },
     {
         name: "Manufacturing",
         desc: "We provide app development services that can help streamline the manufacturing process and make it more efficient. We've worked with manufacturers of all sizes, from small businesses to Fortune 500 companies. And we can tailor our services to fit your specific needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Manufacturing-Industries-Thumbnails.png",
-        link: "//manufacturing"
+        link: "/manufacturing"
     },
     {
         name: "Education / eLearning",
         desc: "Our custom eLearning solutions encompass a wide range of eLearning apps, online courses, learning management systems, corporate learning portals, and more. We offer complete web, mobile, and SaaS-based eLearning applications.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Education-ELearning-industries-thumb.png",
-        link: "/elearning.html"
+        link: "/elearning"
     },
     {
         name: "Energy",
         desc: "The energy industry provides the power we need to live and run our businesses. We can help you develop the perfect app for your energy business, whether it's a utility company, an oil and gas producer, or a renewable energy provider. Our team works with you to create an app that meets your specific needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Energy-Industries-Thumbnails.png",
-        link: "//energy"
+        link: "/energy"
     }
 ];
 

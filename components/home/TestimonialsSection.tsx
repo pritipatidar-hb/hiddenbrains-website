@@ -7,12 +7,13 @@ import { Play } from "lucide-react";
 import { Testimonial } from "@/types/components/HomeView";
 import { VideoModal } from "../shared/VideoModal";
 import { TestimonialsSectionProps } from '@/types/components/home/TestimonialsSection';
+import DanielVant from "@/images/Daniel-Vant-1.webp";
 
 
 
 export const TestimonialsSection = ({ testimonials }: TestimonialsSectionProps) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const videoUrl = testimonials[0]?.videoUrl || "https://www.youtube.com/watch?v=yMc4s7lEt8w";
+    const videoUrl = testimonials[0]?.videoUrl || "https://www.youtube.com/watch?v=KVpn_zWMpA8";
 
     return (
         <section className="py-[50px] bg-white overflow-hidden ">
@@ -24,7 +25,7 @@ export const TestimonialsSection = ({ testimonials }: TestimonialsSectionProps) 
                         onClick={() => setIsModalOpen(true)}
                     >
                         <Image
-                            src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Daniel-Vant-1.webp"
+                            src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-d591ddb/www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Daniel-Vant-1.webp"
                             alt="Daniel Vant Testimonial"
                             fill
                             className="object-cover transition-transform duration-500 group-hover:scale-105"

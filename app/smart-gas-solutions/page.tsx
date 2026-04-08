@@ -22,9 +22,10 @@ import { GuideSection } from "../../components/shared/GuideSection";
 import { IndustrySlider } from "../../components/shared/IndustrySlider";
 import { FAQSection } from "../../components/shared/FAQSection";
 import { LottieAnimation } from "../../components/shared/LottieAnimation";
-// import { SmartGasAnimation } from "../components/smart-gas/SmartGasAnimation";
+import { SmartGasVideo } from "../../components/smart-gas/SmartGasVideo";
 import Image from "next/image";
-
+import SmartGasBanner from "../../images/Smartstation.webp";
+import SmartStationPlatform from "../../images/Smart-Station-platform-image.webp"
 export const metadata = {
     title: "Smart Gas Solutions | Hidden Brains UK",
     description: "Innovative smart gas solutions from Hidden Brains UK. We develop IoT-powered gas monitoring and management systems for improved safety and efficiency.",
@@ -36,7 +37,7 @@ export default async function SmartGasPage() {
     return (
         <div className="min-h-screen bg-white">
             <HeroSection
-                banner={SMART_GAS_HERO.banner}
+                banner={SmartGasBanner}
                 alt="Smart Gas Station Solution"
                 title={SMART_GAS_HERO.title}
                 description={SMART_GAS_HERO.description}
@@ -53,20 +54,7 @@ export default async function SmartGasPage() {
                             {SMART_GAS_INTRODUCTION.content}
                         </div>
 
-                        <div className="relative  overflow-hidden shadow-2xl group cursor-pointer mx-auto">
-                            <Image
-                                src={SMART_GAS_HERO.banner}
-                                alt="Smart Gas Station Solution Video"
-                                width={1200}
-                                height={675}
-                                className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                                <div className="w-20 h-20 bg-orange-500  flex items-center justify-center animate-pulse group-hover:scale-110 transition-transform shadow-lg">
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <SmartGasVideo />
                     </div>
                 }
                 showHomeIcon={true}
@@ -131,7 +119,12 @@ export default async function SmartGasPage() {
             <PlatformsSection
                 title={SMART_GAS_PLATFORMS_DATA.title}
                 description={SMART_GAS_PLATFORMS_DATA.description}
-                image={SMART_GAS_PLATFORMS_DATA.image}
+                image={{
+                    src: SmartStationPlatform.src,
+                    width: 850,
+                    height: 449,
+                    alt: "Smart Gas Station Platforms"
+                }}
                 techPlatforms={SMART_GAS_PLATFORMS_DATA.techPlatforms}
                 integrations={SMART_GAS_PLATFORMS_DATA.integrations}
             />

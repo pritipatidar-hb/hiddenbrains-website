@@ -46,7 +46,7 @@ export const HERO_CONTENT = {
 export const INTRO_CONTENT = {
     title: "Hire Dedicated Software Developers in the UK",
     paragraphs: [
-        <>With over 22+ years of experience delivering robust and award-winning software solutions – we will make sure that your product has all it needs to succeed. Here at Hidden Brains, we have built a team of highly-skilled, experienced, professional, and seasoned software, web, and <strong><a href="/hire-mobile-apps-developer.html" className="text-orange-500 hover:underline">mobile app developers</a></strong> that can help you accelerate your user business growth.</>,
+        <>With over 22+ years of experience delivering robust and award-winning software solutions – we will make sure that your product has all it needs to succeed. Here at Hidden Brains, we have built a team of highly-skilled, experienced, professional, and seasoned software, web, and <strong><a href="/hire-mobile-apps-developer" className="text-orange-500 hover:underline">mobile app developers</a></strong> that can help you accelerate your user business growth.</>,
         <>With the dominant leadership in the IT industry, we have established a strong foothold by delivering highly secure, reliable and scalable, and customized next-gen apps, which leads to faster results and ensures better ROI. As our certified app programmers have worked on a wide variety of solutions in various verticals, we are committed to delivering unmatched quality solutions to our clients.</>,
         <>You can hire app developers at <strong>Hidden Brains</strong> on an hourly, monthly, or yearly basis, depending upon the complexity of your business requirements. Our pool of dedicated developers are offering end-to-end web and mobile app development solutions to start-ups and large-scale companies globally on flexible engagement models.</>
     ],
@@ -63,7 +63,7 @@ export const TECH_EXPERTISE: TechExpertiseItem[] = [
         title: "Hire Android App Developers",
         desc: "By hiring Android app developers at Hidden Brains UK, you can create feature-rich Android apps using Java and Kotlin languages and make them featured on Google Play.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/android.webp",
-        link: "/android-apps-development.html",
+        link: "/android-app-development",
         color: "orange"
     },
     {
@@ -77,21 +77,21 @@ export const TECH_EXPERTISE: TechExpertiseItem[] = [
         title: "Hire Cross-Platform App Developers",
         desc: "To ensure a top-notch user experience, our talented team of cross-platform app developers uses only the most cutting-edge hybrid mobile app development technologies.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/Cross-platform.png",
-        link: "/cross-platform-app-development.html",
+        link: "/cross-platform-app-development",
         color: "dark"
     },
     {
         title: "Hire Web Developers",
         desc: "You can hire full-stack web app developers, programmers, and coders through Hidden Brains UK for website development, support, and testing.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/responsive.webp",
-        link: "/hire-web-developers.html",
+        link: "/hire-web-developers",
         color: "green"
     },
     {
         title: "Hire UI/UX Designers",
         desc: "By utilizing a distinctive design strategy, user-friendly interfaces, and seamless user experiences, our talented UI/UX engineers can set your app apart from the competition.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/UI-UXDesigner.webp",
-        link: "/software-analysis-design-upgradation-services.html",
+        link: "/hire-web-developers",
         color: "yellow"
     },
     {
@@ -105,12 +105,14 @@ export const TECH_EXPERTISE: TechExpertiseItem[] = [
         title: "Hire React Native Developers",
         desc: "By shaking hands with Hidden Brains, you can easily onboard the best React Native app developers for your project and build a dynamic, feature-rich cross-platform app.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/ReactNative.png",
+        link: "/react-native-app-development-company",
         color: "green"
     },
     {
         title: "Hire Flutter App Developers",
         desc: "From custom development to Flutter App consulting, our dedicated team of Flutter app developers can provide your all-in-one solution at Hidden Brains UK.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Flutter.png",
+        link: "/flutter-app-development-company",
         color: "yellow"
     },
     {
@@ -140,14 +142,14 @@ export const APP_DEV_TECH: TechExpertiseItem[] = [
         title: "Swift App Development",
         desc: "Develop an entirely new app using Swift language or add Swift framework to an existing app using our exclusive service.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/swift.webp",
-        link: "/swift-app-development.html",
+        link: "/swift-app-development",
         color: "dark"
     },
     {
         title: "Cross-Platform Development",
         desc: "Our developers specialize in building cross platform mobile apps in accordance to client’s business needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/responsive.webp",
-        link: "/cross-platform-app-development.html",
+        link: "/cross-platform-app-development",
         color: "green"
     },
     {
@@ -161,7 +163,7 @@ export const APP_DEV_TECH: TechExpertiseItem[] = [
         title: "Xamarin App Development",
         desc: "Our decade of experience and expertise in C# enable us to develop robust Xamarin app development services",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/06/xamarin.webp",
-        link: "/xamarin-app-development.html",
+        link: "/xamarin-app-development",
         color: "purple"
     }
 ];
@@ -204,79 +206,79 @@ export const INDUSTRIES_SERVED: IndustryItem[] = [
         name: "Retail",
         desc: "Looking for support for developing an innovative, new-generation retail and eCommerce digital solution? Take advantage of our consulting services and create a strong presence in the marketplace. To hire our dedicated retail app developers, you can contact us today!",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/retail-industries-thumb.jpg",
-        link: "/retail.html"
+        link: "/retail"
     },
     {
         name: "Media & Entertainment",
         desc: "Are you looking for a native or cross-platform entertainment app developer? Do you want the peace of mind that comes with knowing your project will be supported by a dedicated team? Look no further than us! We are capable of building software solutions such as OTT apps, media apps, CRM/ERP, etc.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/media-industries-thumb.jpg",
-        link: "/media-and-entertainment.html"
+        link: "/media-and-entertainment"
     },
     {
         name: "Real Estate",
         desc: "Our real estate app developers are highly skilled at building portals and databases for our clients. We ensure all of our programmers stay up-to-date on industry developments so they can create imaginative, cutting-edge technology that is always changing.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Real-Estate-Industries-Thumbnails.png",
-        link: "//real-estate"
+        link: "/real-estate"
     },
     {
         name: "ECommerce",
         desc: "We have a team of experienced developers who can create custom ecommerce applications tailored to your specific needs. Whether you're looking to improve your customer's experience or increase sales, we can help you achieve your goals. Our team will work with you to create an app that meets your specific needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/ECommerce-Industries-Thumbnails.png",
-        link: "/ecommerce.html"
+        link: "/ecommerce"
     },
     {
         name: "Online Booking",
         desc: "If you're in the online booking industry, you know that things are constantly changing. You need an app that can keep up with the latest trends and technologies. That's where Hidden Brains comes in. We provide app development services for the online booking industry, so you can focus on what you do best - running your business.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Online-Booking-Industries-Thumbnails.png",
-        link: "//online-booking"
+        link: "/online-booking"
     },
     {
         name: "Social Networking",
         desc: "Our team of experienced developers can create custom apps for your business, whether it's a small business or a large enterprise. We've worked with all types of businesses in the Social Networking industry, so we know what it takes to create a successful app.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Social-Networking-Industries-Thumbnails.png",
-        link: "/social-networking.html"
+        link: "/social-networking"
     },
     {
         name: "Manufacturing",
         desc: "We provide app development services that can help streamline the manufacturing process and make it more efficient. We've worked with manufacturers of all sizes, from small businesses to Fortune 500 companies. And we can tailor our services to fit your specific needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Manufacturing-Industries-Thumbnails.png",
-        link: "//manufacturing"
+        link: "/manufacturing"
     },
     {
         name: "Education / eLearning",
         desc: "At Hidden Brains UK, we offer e-learning and educational app development services all across the globe. Our offshoring team has extensive years of experience in developing applications for start-ups, SMEs, and famous brand names.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Education-ELearning-industries-thumb.png",
-        link: "/elearning.html"
+        link: "/elearning"
     },
     {
         name: "Energy",
         desc: "The energy industry provides the power we need to live and run our businesses. We can help you develop the perfect app for your energy business, whether it's a utility company, an oil and gas producer, or a renewable energy provider. Our team works with you to create an app that meets your specific needs.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Energy-Industries-Thumbnails.png",
-        link: "//energy"
+        link: "/energy"
     },
     {
         name: "Fintech",
         desc: "In the Banking & Finance industry, we provide app development services that help banks and other financial institutions to develop mobile applications. Our app development services for this industry help them keep track of their customer's finances and manage their own internal processes.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/fintech-industries-thumb.jpg",
-        link: "//banking-finance" /* Also mapped to fin-tech similarly in others, using link from the provided DOM for Banking & Finance */
+        link: "/banking-finance" /* Also mapped to fin-tech similarly in others, using link from the provided DOM for Banking & Finance */
     },
     {
         name: "Insurance",
         desc: "We help our clients develop their insurance business by providing them with custom applications designed to meet their specific needs. We have a team of experienced developers who are familiar with the insurance industry and can provide you with the best possible solution for your business.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Insurance-Industries-Thumbnails.png",
-        link: "/insurance.html"
+        link: "/insurance"
     },
     {
         name: "Travel & Hospitality",
         desc: "We provide top-notch app development services that will help your business stand out from the competition. Whether you're looking for a simple booking app or something more complex, we can help. Contact us today to learn more about our app development services for the travel and hospitality industry.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/Travel-Hospitality-Industries-Thumbnails.png",
-        link: "//travel-hospitality"
+        link: "/travel-hospitality"
     },
     {
         name: "Logistics & Transport",
         desc: "Utilize our deep knowledge of industry sectors to build digital solutions that simplify mobile and complicated business problems, and make it easier for you to grow your business. What are you waiting for? Get in touch with us to hire a mobile app developer.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2022/07/logistics-industries-thumb.jpg",
-        link: "//logistics"
+        link: "/logistics"
     }
 ];
 

@@ -108,26 +108,26 @@ export const RELATED_SERVICES = [
     {
         title: "Hire Shopify Developer",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/shopify.webp",
-        link: "/hire-shopify-developer.html"
+        link: "/hire-shopify-developer"
     },
     {
         title: "Hire Mobile App Developer",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/MobileApp-dev.webp",
-        link: "/hire-mobile-apps-developer.html"
+        link: "/hire-mobile-apps-developer"
     },
     {
         title: "Hire PHP Developer",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/php-dev.webp",
-        link: "/hire-php-developer.html"
+        link: "/hire-php-developer"
     },
     {
         title: "Hire ASP.NET Developer",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/asnet-dev.webp",
-        link: "/hire-asp-net-developer.html"
+        link: "/hire-asp-net-developer"
     },
     {
         title: "Hire Web Designers",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/WebPortal-dev.webp",
-        link: "/hire-web-designers.html"
+        link: "/hire-web-designers"
     }
 ];

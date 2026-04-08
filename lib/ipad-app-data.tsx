@@ -91,55 +91,55 @@ export const IPAD_INDUSTRIES = [
         name: "Media",
         desc: "Stunning performance and media-rich features implemented gracefully for Media & Entertainment businesses.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Media-Entertainment.webp",
-        link: "/media-and-entertainment.html"
+        link: "/media-and-entertainment"
     },
     {
         name: "Insurance",
         desc: "Transform your insurance business workflow with reliable and secure iPad application capabilities.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Insurance.webp",
-        link: "/insurance.html"
+        link: "/insurance"
     },
     {
         name: "Education",
         desc: "Immersive learning experiences powered by smart and accessible iPad e-learning applications.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Education.webp",
-        link: "/elearning.html"
+        link: "/elearning"
     },
     {
         name: "Banking",
         desc: "Elevating traditional banking with sophisticated and secure mobile applications for iPad users.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Banking.webp",
-        link: "//banking-finance"
+        link: "/banking-finance"
     },
     {
         name: "Travel",
         desc: "Advanced travel app solutions for modern agencies connecting dots globally on the iPad platform.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Travel.webp",
-        link: "//travel-hospitality"
+        link: "/travel-hospitality"
     },
     {
         name: "eCommerce",
         desc: "Scalable B2B and B2C eCommerce iPad application structures accelerating digital growth.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/eCommerce.webp",
-        link: "/ecommerce.html"
+        link: "/ecommerce"
     },
     {
         name: "Retail",
         desc: "Cutting-edge applications revolutionizing retail outlets, accelerating user conversion processes.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Retail.webp",
-        link: "/retail.html"
+        link: "/retail"
     },
     {
         name: "Logistics",
         desc: "Modern app solutions that augment the transport and logistics pipelines with exceptional connectivity.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Logistics.webp",
-        link: "//logistics"
+        link: "/logistics"
     },
     {
         name: "Social Networking",
         desc: "Interactive networking landscapes that elevate connections with large and cohesive communities.",
         image: "https://www.hiddenbrains.co.uk/wp-content/uploads/2021/07/Social-Networking.webp",
-        link: "/social-networking.html"
+        link: "/social-networking"
     }
 ];
 

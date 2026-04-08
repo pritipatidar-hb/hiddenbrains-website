@@ -31,7 +31,8 @@ import { GuideSection } from "../../components/shared/GuideSection";
 import { IndustrySlider } from "../../components/shared/IndustrySlider";
 import { UseCasesSection } from "../../components/shared/UseCasesSection";
 import { LottieAnimation } from "@/components/shared/LottieAnimation";
-
+import { VisitorManagementVideo } from "@/components/visitor-management/VisitorManagementVideo";
+import VistorImage from "../../images/visitormanagement.webp"
 export const metadata = {
     title: "Visitor Management System | Hidden Brains UK",
     description: "Smart visitor management system by Hidden Brains UK. Streamline visitor check-in, enhance security, and improve the visitor experience.",
@@ -43,7 +44,7 @@ export default async function VisitorManagementPage() {
     return (
         <div className="min-h-screen bg-white">
             <HeroSection
-                banner="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/Visitormanagment-YouTube-Thumbnail.webp"
+                banner={VistorImage}
                 alt="Visitor Management System"
                 title={VISITOR_MANAGEMENT_HERO.title}
                 description={VISITOR_MANAGEMENT_HERO.description}
@@ -70,20 +71,7 @@ export default async function VisitorManagementPage() {
                             </p>
                         </div>
 
-                        <div className="relative  overflow-hidden shadow-2xl group cursor-pointer mx-auto">
-                            <Image
-                                src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2023/03/Visitormanagment-YouTube-Thumbnail.webp"
-                                alt="Visitor Management Solutions Video"
-                                width={1200}
-                                height={675}
-                                className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                                <div className="w-20 h-20 bg-orange-500  flex items-center justify-center animate-pulse group-hover:scale-110 transition-transform shadow-lg">
-                                    <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <VisitorManagementVideo />
                     </div>
                 }
                 showHomeIcon={true}
@@ -128,12 +116,6 @@ export default async function VisitorManagementPage() {
                     <div className=" mx-auto text-center mb-[40px]">
                         <h2 className=" text-[26px] md:text-[36px] font-semibold text-[#14133b] mb-[18px]">How Does Visitor Management Solutions Work</h2>
                     </div>
-
-                    {/* <div className="max-w-6xl mx-auto flex justify-center overflow-visible">
-                        <ProcessDiagram
-                            data={VEHICLE_TRACKING_PROCESS}
-                        />
-                    </div> */}
                     <div className="mx-auto max-w-6xl">
                         <LottieAnimation
                             animationUrl="/json/visitormngnt-howitswork-06.json"
@@ -197,6 +179,7 @@ export default async function VisitorManagementPage() {
                     description: item.desc,
                     image: item.image
                 }))}
+                imageStyle="cover"
             />
             <TestimonialsSection testimonials={data.TESTIMONIALS} />
 
