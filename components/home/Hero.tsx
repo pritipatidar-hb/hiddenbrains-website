@@ -26,7 +26,7 @@ export const HeroSection = ({ slides, siteConfig }: HeroSectionProps) => {
                         {slide.subtitle}
                     </p>
                     <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 justify-center flex-wrap w-full px-2 sm:px-0">
-                        <Link href={slide.link} className="w-full sm:w-auto bg-[#f39223] text-white px-8 py-3.5 sm:py-3 rounded-md font-bold text-[15px] sm:text-sm uppercase tracking-wider transition-all duration-300 ease-in-out hover:bg-white hover:text-[#f39223] hover:scale-105 shadow-xl flex items-center justify-center text-center">
+                        <Link href={slide.link} className="w-full sm:w-auto bg-[#f39223] text-white px-8 py-3.5 sm:py-3 rounded-md font-bold text-[15px] sm:text-sm uppercase tracking-wider transition-all duration-300 ease-in-out hover:bg-white hover:!text-[#f39223] hover:scale-105 shadow-xl flex items-center justify-center text-center">
                             Let&apos;s Explore
                         </Link>
                         <div className="flex items-center gap-3 sm:gap-4 group justify-center w-full sm:w-auto">

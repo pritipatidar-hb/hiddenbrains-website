@@ -49,7 +49,7 @@ export default async function LogisticsPage() {
                 ]}
                 title={LOGISTICS_INTRODUCTION.title}
                 content={
-                    <div className="space-y-6 text-[#6a7c92]">
+                    <div className="space-y-4 text-[#6a7c92]">
                         {LOGISTICS_INTRODUCTION.content.map((p, i) => (
                             <p key={i}>{p}</p>
                         ))}

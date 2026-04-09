@@ -52,7 +52,7 @@ export const IntroductionSection: React.FC<IntroductionSectionProps> = ({
                         </nav>
 
                         {/* Title */}
-                        <h2 className="text-[26px] md:text-[36px] max-w-[490px]  font-semibold text-[#14133b] mb-[18px] leading-[1.2]">
+                        <h2 className="text-[26px] md:text-[36px]  font-semibold text-[#14133b] mb-[18px] leading-[1.2]">
                             {title}
                         </h2>
 

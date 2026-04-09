@@ -148,7 +148,7 @@ export default async function IPhoneAppDevelopmentPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                         {WHY_CHOOSE_HB.map((reason, idx) => (
-                            <div key={idx} className="flex gap-6 p-6 hover:bg-gray-50 rounded-xl transition-colors">
+                            <div key={idx} className="flex flex-wrap gap-6 p-6 hover:bg-gray-50 rounded-xl transition-colors">
                                 <div className="shrink-0 w-16 h-16 bg-orange-100 text-orange-500 flex items-center justify-center rounded-xl">
                                     {reason.icon}
                                 </div>

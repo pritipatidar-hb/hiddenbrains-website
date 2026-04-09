@@ -46,7 +46,7 @@ export default async function RetailPage() {
                 ]}
                 title={RETAIL_INTRODUCTION.title}
                 content={
-                    <div className="space-y-6 text-[#6a7c92]">
+                    <div className="space-y-4 text-[#6a7c92]">
                         {RETAIL_INTRODUCTION.content.map((p, i) => (
                             <p key={i}>{p}</p>
                         ))}

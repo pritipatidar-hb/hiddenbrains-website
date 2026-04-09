@@ -56,7 +56,7 @@ export const PortfolioSection = ({ subtitle, title, description, projects }: Por
             <div className="flex justify-center mt-6 md:mt-[30px]">
                 <Link href="/our-works" className="group flex items-center space-x-2 md:space-x-3 text-gray-900 font-bold hover:text-blue-600 transition-colors duration-300">
                     <span className="uppercase tracking-widest text-xs md:text-[13px] font-[500] text-[#14133b]">View Our Work</span>
-                    <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-blue-600 group-hover:bg-black group-hover:text-white transition-all duration-300">
+                    <div className="w-8 h-8 md:w-10 md:h-10 text-gray-400 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-blue-600 group-hover:bg-black group-hover:text-white transition-all duration-300">
                         <svg className="w-3 h-3 md:w-4 md:h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
                     </div>
                 </Link>

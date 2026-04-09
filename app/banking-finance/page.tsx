@@ -43,7 +43,7 @@ export default async function BankingFinancePage() {
                 ]}
                 title={BANKING_INTRODUCTION.title}
                 content={
-                    <div className="space-y-6 text-[#6a7c92]">
+                    <div className="space-y-4 text-[#6a7c92]">
                         {BANKING_INTRODUCTION.content.map((p, i) => (
                             <p key={i}>{p}</p>
                         ))}
@@ -54,7 +54,7 @@ export default async function BankingFinancePage() {
             {/* Services Section */}
             <section className="py-[60px] bg-[#f8faff]">
                 <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-[40px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-12 items-center mb-[40px]">
                         <div>
                             <h5 className="text-[#f29111] font-bold text-[14px] uppercase tracking-widest mb-4">
                                 {BANKING_SERVICES.subtitle}
