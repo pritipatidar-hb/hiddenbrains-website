@@ -10,7 +10,7 @@ export interface HeroSectionProps {
     /** The imported banner image (StaticImageData) or a URL string */
     banner: StaticImageData | string;
     alt: string;
-    title: string;
+    title: React.ReactNode;
     description?: string;
     breadcrumb?: BreadcrumbItem[];
     ctaText?: string;

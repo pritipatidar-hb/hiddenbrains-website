@@ -16,8 +16,8 @@ import {
 
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { IntroductionSection } from "@/components/shared/IntroductionSection";
-
-
+import { HeroSection } from "@/components/shared/HeroSection";
+import emergingTechnologyServicesBanner from "@/images/emerging-technology-services-Banner.webp";
 export const metadata = {
     title: "Emerging Technology Services | Hidden Brains UK",
     description: "Gain the first-mover advantage with our expertise in emerging technologies including cloud computing, wearables, and augmented reality services in the UK.",
@@ -30,48 +30,22 @@ export default async function EmergingTechnologyServicesPage() {
     return (
         <main className="min-h-screen bg-white">
             {/* Banner Section */}
-            <section className="relative min-h-[500px] flex items-center pt-20 pb-20 overflow-hidden text-white">
-                <div className="absolute inset-0 z-0">
-                    <Image
-                        src="https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2021/07/emerging-technology.webp"
-                        alt="Emerging Technology Services"
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                    <div className="absolute inset-0 bg-black/60"></div>
-                </div>
-
-                <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="max-w-[700px]">
-                        <h1 className="text-[28px] md:text-[50px] font-semibold md:leading-tight mb-[18px] mt-4">
-                            Emerging <br />Technology Services
-                        </h1>
-                        <p className=" text-[16px] md:text-[18px] font-normal text-gray-200 mb-[25px] leading-relaxed pr-10 max-w-[650px]">
-                            Gain The First-Mover Advantage and A Competitive Edge With Our Expertise in Emerging Technologies
-                        </p>
-                        <Button
-                            href="/contact"
-                            variant="primary"
-                            className="px-7 py-3 rounded-sm uppercase tracking-wider"
-                        >
-                            Get In Touch
-                        </Button>
-                    </div>
-                </div>
-            </section>
+            <HeroSection
+                banner={emergingTechnologyServicesBanner}
+                alt="Emerging Technology Services"
+                title={<>Emerging <br />Technology Services</>}
+                description="Gain The First-Mover Advantage and A Competitive Edge With Our Expertise in Emerging Technologies"
+                ctaText="Get In Touch"
+                ctaHref="/contact"
+                minHeight="500px"
+                darkOverlay={true}
+            />
 
             {/* Introduction Section */}
             <IntroductionSection
                 bgColor="bg-[#f8faff]"
                 breadcrumbs={[{ label: "Emerging Technology Services" }]}
                 title="Emerging IT Technologies"
-                counters={[
-                    { value: "22", symbol: "+", label: "Years of experience" },
-                    { value: "1000", symbol: "+", label: "Mobile Projects" },
-                    { value: "30", symbol: "+", label: "Domain served" },
-                    { value: "125", symbol: "+", label: "Mobile Experts" }
-                ]}
                 content={
                     <div className="flex flex-col lg:flex-row gap-12">
                         <div className="lg:w-1/2">
