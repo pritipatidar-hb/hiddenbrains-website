@@ -29,7 +29,7 @@ export default async function BlogDetailPage(props: BlogPageProps) {
     const { slug } = params;
 
     // Verify if the blog file exists
-    const filePath = path.join(process.cwd(), "assests", slug);
+    const filePath = path.join(process.cwd(), "assets", slug);
 
     if (!fs.existsSync(filePath)) {
         return notFound();
