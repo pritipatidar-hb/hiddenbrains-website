@@ -1,6 +1,6 @@
 import React from 'react';
 import { LucideIcon } from 'lucide-react';
-import { ProcessItem, ProcessColumn, ProcessData, ProcessDiagramProps } from '@/types/app/components/vehicle-tracking/ProcessDiagram';
+import { ProcessItem, ProcessColumn, ProcessData, ProcessDiagramProps } from '@/types/components/vehicle-tracking/ProcessDiagram';
 
 
 

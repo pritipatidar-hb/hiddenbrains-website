@@ -10,7 +10,7 @@ import { GuideSection } from "@/components/shared/GuideSection";
 import { CtaSection } from "@/components/shared/CtaSection";
 
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
-import { BenefitsSection } from "@/app/components/BenefitsSection";
+import { BenefitsSection } from "@/components/shared/BenefitsSection";
 import { ProcessSection } from "@/components/shared/ProcessSection";
 import { ClipboardList, PencilRuler, Smartphone, Rocket, CloudCog } from "lucide-react";
 

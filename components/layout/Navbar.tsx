@@ -8,6 +8,7 @@ import dynamic from "next/dynamic";
 const CascadingMenu = dynamic(() => import("./CascadingMenu"));
 const NavDropdown = dynamic(() => import("./NavDropdown"));
 const MobileMenu = dynamic(() => import("./MobileMenu"));
+import { Button } from "@/components/common/Button";
 const SidePanel = dynamic(() => import("./SidePanel"));
 import React, { useState } from "react";
 import { ChevronRight } from "lucide-react";
@@ -183,7 +184,8 @@ export default function Navbar({ data }: {
 
             {/* Right Section */}
             <div className="hidden lg:flex items-center h-full mr-0 md:mr-[-33px]">
-              <button
+              <Button
+                variant="ghost"
                 onClick={() => setIsSidePanelOpen(true)}
                 className="text-gray-800 px-6 h-full flex items-center hover:bg-gray-50 transition-colors"
                 aria-label="Open navigation menu"
@@ -200,14 +202,16 @@ export default function Navbar({ data }: {
                     d="M4 8h16M4 16h16"
                   />
                 </svg>
-              </button>
+              </Button>
 
-              <Link
+              <Button
                 href="/contact"
-                className="bg-[#F29111] hover:bg-orange-600 !text-[#fff] py-[10px] px-[30px] h-full flex items-center font-medium transition-colors uppercase text-[15px]"
+                variant="primary"
+                size="md"
+                className="!text-white h-full flex items-center font-medium transition-colors uppercase"
               >
                 Contact Us
-              </Link>
+              </Button>
             </div >
 
             <MobileMenu data={data} />

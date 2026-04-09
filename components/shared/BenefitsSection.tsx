@@ -1,5 +1,5 @@
 import React from 'react';
-import { BenefitItem, BenefitsSectionProps } from '@/types/app/components/BenefitsSection';
+import { BenefitItem, BenefitsSectionProps } from '@/types/components/shared/BenefitsSection';
 
 
 

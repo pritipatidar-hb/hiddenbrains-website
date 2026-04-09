@@ -10,7 +10,7 @@ export async function GET(
     const { slug } = params;
 
     try {
-        const filePath = path.join(process.cwd(), "assests", slug);
+        const filePath = path.join(process.cwd(), "assets", slug);
 
         if (!fs.existsSync(filePath)) {
             return new NextResponse("Not Found", { status: 404 });

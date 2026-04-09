@@ -2,6 +2,7 @@
 
 import React from "react";
 import { X, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
+import { Button } from "@/components/common/Button";
 
 interface SidePanelProps {
     isOpen: boolean;
@@ -23,12 +24,14 @@ export default function SidePanel({ isOpen, onClose }: SidePanelProps) {
                 className={`fixed right-0 top-0 h-full w-[400px] max-w-full bg-white z-[101] shadow-2xl transition-transform duration-500 transform ${isOpen ? "translate-x-0" : "translate-x-full"
                     } p-10 overflow-y-auto`}
             >
-                <button
+                <Button
+                    variant="ghost"
                     onClick={onClose}
-                    className="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors"
+                    className="absolute top-6 right-6 text-gray-400 hover:text-gray-900"
+                    aria-label="Close"
                 >
                     <X size={24} />
-                </button>
+                </Button>
 
                 <div className="mt-12">
                     <h2 className="text-2xl font-bold text-[#14133b] mb-4 uppercase tracking-tight">

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
+import { Button } from '@/components/common/Button';
 import ReCaptchaCheckbox from './ReCaptchaCheckbox';
 
 const ContactForm = () => (
@@ -29,7 +30,7 @@ const ContactForm = () => (
             <textarea placeholder="Project Description" rows={6} className="w-full bg-white/60 border border-gray-200 rounded-lg px-4 md:px-6 py-3 md:py-4 text-sm md:text-[15px] text-[#6a7c92] focus:outline-none focus:border-[#f49b1e] focus:bg-white transition-all resize-none"></textarea>
             <ReCaptchaCheckbox />
             <div className="pt-2">
-                <button type="submit" className="w-full py-3 md:py-[10px] px-[30px] bg-[#f49b1e] text-white font-medium rounded-sm hover:bg-[#e08b1a] transition-all duration-300 shadow-lg shadow-orange-500/20 uppercase text-sm md:text-[15px] tracking-wider">Send Message</button>
+                <Button type="submit" variant="primary" fullWidth className="py-3 md:py-[10px] px-[30px] font-medium rounded-sm duration-300 shadow-lg shadow-orange-500/20 uppercase text-sm md:text-[15px] tracking-wider">Send Message</Button>
             </div>
         </form>
     </div>

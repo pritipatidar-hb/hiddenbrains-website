@@ -143,9 +143,6 @@ export default async function WarehouseManagementPage() {
                         <h2 className=" text-[26px] md:text-[36px] font-semibold font-black text-slate-900 mb-[18px]">How does Warehouse &amp; Inventory Solutions Work</h2>
                     </div>
 
-                    {/* <div className="max-w-6xl mx-auto flex justify-center overflow-visible">
-                                    <ProcessDiagram data={TIME_ATTENDANCE_PROCESS} />
-                                </div> */}
                     <div className="mx-auto max-w-6xl">
                         <LottieAnimation
                             animationUrl="/json/warehouse-solution-lifecycle-howits-work-v02.json"
@@ -538,7 +535,7 @@ export default async function WarehouseManagementPage() {
                 </div>
             </section>
 
-            <UseCasesSection 
+            <UseCasesSection
                 title="Use Cases"
                 description="Hidden Brains UK has tailored the WMS technology solutions to successfully address industry-specific issues and improve the supply chain management process."
                 items={WAREHOUSE_USE_CASES}

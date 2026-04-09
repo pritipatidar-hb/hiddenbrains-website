@@ -18,8 +18,8 @@ import {
     CMMS_INDUSTRIES_DATA,
     CMMS_FAQS
 } from "../../lib/cmms-data";
-import { ProcessDiagram } from "../components/vehicle-tracking/ProcessDiagram";
-import { BenefitsSection } from "../components/BenefitsSection";
+import { ProcessDiagram } from "@/components/vehicle-tracking/ProcessDiagram";
+import { BenefitsSection } from "@/components/shared/BenefitsSection";
 import { PlatformsSection } from "../../components/shared/PlatformsSection";
 import { GuideSection } from "../../components/shared/GuideSection";
 import { IndustrySlider } from "../../components/shared/IndustrySlider";
@@ -135,10 +135,6 @@ export default async function CMMSPage() {
                             Hidden Brains CMMS offers a robust, centralized platform to manage technician and asset maintenance tasks with maximum efficiency in real-time.
                         </p>
                     </div>
-
-                    {/* <div className="max-w-6xl mx-auto flex justify-center overflow-visible">
-                        <ProcessDiagram data={CMMS_PROCESS} />
-                    </div> */}
                     <div className="mx-auto max-w-6xl">
                         <LottieAnimation
                             animationUrl="/json/cmm-how-its-work-01.json"

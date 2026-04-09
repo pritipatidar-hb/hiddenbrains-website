@@ -2,6 +2,7 @@
 
 import React from "react";
 import { X } from "lucide-react";
+import { Button } from "@/components/common/Button";
 import { VideoModalProps } from '@/types/components/shared/VideoModal';
 
 
@@ -22,12 +23,14 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, videoUr
     return (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 md:p-8">
             <div className="relative w-full max-w-5xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl animate-in zoom-in-95 duration-200">
-                <button
+                <Button
+                    variant="close"
                     onClick={onClose}
-                    className="absolute top-4 right-4 z-10 p-2 bg-white/10 hover:bg-white/20 text-white rounded-full transition-colors"
+                    className="absolute top-4 right-4 z-10"
+                    aria-label="Close"
                 >
                     <X size={24} />
-                </button>
+                </Button>
                 <iframe
                     src={embedUrl}
                     title="YouTube video player"

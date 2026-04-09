@@ -36,7 +36,7 @@ export const GatedCommunityVideo = () => {
             <VideoModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                videoUrl="https://www.youtube.com/watch?v=RewqM1WFJzI"
+                videoUrl="https://www.youtube.com/watch?v=aLlyUPnypXM&t=4s"
             />
         </>
     );

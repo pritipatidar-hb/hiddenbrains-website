@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { ChevronRight, Users, ShieldCheck, Zap, Globe, MessageSquare } from "lucide-react";
 
 import { getData } from "@/lib/data";
@@ -56,13 +57,14 @@ export default async function IPhoneAppDevelopmentPage() {
                         <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
                             Empower your business with custom made highly functional and exclusive iPhone app development solutions and generate better ROI. In the UK, Hidden Brains is the ideal platform to build and launch your next-gen iPhone application with industry-best technologies.
                         </p>
-                        <Link
+                        <Button
                             href="/contact"
-                            className="inline-flex items-center px-8 py-4 bg-[#f29111] hover:bg-orange-600 text-white font-semibold rounded-md transition-all group"
+                            variant="primary"
+                            className="px-8 py-4 rounded-md group"
                         >
                             Get in Touch
                             <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -123,15 +125,6 @@ export default async function IPhoneAppDevelopmentPage() {
                             Being rooted for 20+ years in the app development industry, we have gained immense experience in understanding the client needs of different industries. Therefore, we offer app development solutions to:
                         </p>
                     </div>
-
-                    {/* <MobileIndustrySlider
-                        industries={INDUSTRIES_SERVED.map(i => ({
-                            title: i.name,
-                            content: i.desc,
-                            image: i.image,
-                            link: i.link
-                        }))}
-                    /> */}
                     <IndustrySlider industries={REACT_JS_INDUSTRIES} />
                 </div>
             </section>
