@@ -18,9 +18,9 @@ import {
     VEHICLE_TRACKING_PLATFORMS,
     VEHICLE_TRACKING_INTEGRATIONS
 } from "../../lib/vehicle-tracking-data";
-import { ProcessDiagram } from "../components/vehicle-tracking/ProcessDiagram";
-import { BenefitsSection } from "../components/BenefitsSection";
-import { AlertsSection } from "../components/vehicle-tracking/AlertsSection";
+import { ProcessDiagram } from "@/components/vehicle-tracking/ProcessDiagram";
+import { BenefitsSection } from "@/components/shared/BenefitsSection";
+import { AlertsSection } from "@/components/vehicle-tracking/AlertsSection";
 import { VehicleTrackingVideo } from "../../components/vehicle-tracking/VehicleTrackingVideo";
 import { PlatformsSection } from "../../components/shared/PlatformsSection";
 import { GuideSection } from "../../components/shared/GuideSection";

@@ -10,7 +10,7 @@ import { IndustrySlider } from "@/components/shared/IndustrySlider";
 import { GuideSection } from "@/components/shared/GuideSection";
 import { CtaSection } from "@/components/shared/CtaSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
-import { BenefitsSection } from "@/app/components/BenefitsSection";
+import { BenefitsSection } from "@/components/shared/BenefitsSection";
 
 import banner from "@/images/codeigniter-development-services.webp";
 

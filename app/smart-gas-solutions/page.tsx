@@ -16,7 +16,7 @@ import {
     SMART_GAS_INDUSTRIES_DATA,
     SMART_GAS_FAQS
 } from "../../lib/smart-gas-data";
-import { BenefitsSection } from "../components/BenefitsSection";
+import { BenefitsSection } from "@/components/shared/BenefitsSection";
 import { PlatformsSection } from "../../components/shared/PlatformsSection";
 import { GuideSection } from "../../components/shared/GuideSection";
 import { IndustrySlider } from "../../components/shared/IndustrySlider";

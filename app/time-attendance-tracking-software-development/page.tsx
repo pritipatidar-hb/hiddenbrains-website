@@ -21,8 +21,8 @@ import {
     TIME_ATTENDANCE_FAQ,
     TIME_ATTENDANCE_PROCESS
 } from "../../lib/time-attendance-data";
-import { ProcessDiagram } from "../components/vehicle-tracking/ProcessDiagram";
-import { BenefitsSection } from "../components/BenefitsSection";
+import { ProcessDiagram } from "@/components/vehicle-tracking/ProcessDiagram";
+import { BenefitsSection } from "@/components/shared/BenefitsSection";
 import { PlatformsSection } from "../../components/shared/PlatformsSection";
 import { GuideSection } from "../../components/shared/GuideSection";
 import { IndustrySlider } from "../../components/shared/IndustrySlider";

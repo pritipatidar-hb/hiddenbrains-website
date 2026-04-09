@@ -1,5 +1,5 @@
 import React from 'react';
-import { VEHICLE_TRACKING_ALERTS } from '../../../lib/vehicle-tracking-data';
+import { VEHICLE_TRACKING_ALERTS } from '../../lib/vehicle-tracking-data';
 
 export const AlertsSection = () => {
     return (

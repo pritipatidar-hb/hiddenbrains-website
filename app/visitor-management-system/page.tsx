@@ -22,10 +22,10 @@ import {
     VISITOR_MANAGEMENT_PLATFORMS,
     VISITOR_MANAGEMENT_TECH_PLATFORMS_INTRO
 } from "../../lib/visitor-management-data";
-import { ProcessDiagram } from "../components/vehicle-tracking/ProcessDiagram";
+import { ProcessDiagram } from "@/components/vehicle-tracking/ProcessDiagram";
 import Image from "next/image";
 import { VEHICLE_TRACKING_PROCESS } from "@/lib/vehicle-tracking-data";
-import { BenefitsSection } from "../components/BenefitsSection";
+import { BenefitsSection } from "@/components/shared/BenefitsSection";
 import { PlatformsSection } from "../../components/shared/PlatformsSection";
 import { GuideSection } from "../../components/shared/GuideSection";
 import { IndustrySlider } from "../../components/shared/IndustrySlider";
