@@ -25,6 +25,7 @@ import {
 import { HIRE_MOBILE_INDUSTRIES } from "@/lib/hire-mobile-apps-data";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { Button } from "@/components/common/Button";
 import { ProcessSection } from "@/components/shared/ProcessSection";
 
 export const metadata = {
@@ -200,12 +201,14 @@ export default async function HireXamarinDevelopersPage() {
                                         </li>
                                     ))}
                                 </ul>
-                                <Link
+                                <Button
                                     href="/contact"
-                                    className={`w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 ${model.active ? 'bg-[#f29111] text-white hover:bg-orange-600 shadow-lg shadow-orange-200' : 'border-2 border-[#f29111] !text-[#f29111] hover:bg-[#f29111] hover:text-white'}`}
+                                    variant={model.active ? "primary" : "outline"}
+                                    fullWidth
+                                    className={`py-4 rounded-xl font-bold transition-all text-center gap-2 ${!model.active ? 'border-2 border-[#f29111] !text-[#f29111] hover:bg-[#f29111] hover:text-white' : 'hover:bg-orange-600 shadow-lg shadow-orange-200'}`}
                                 >
                                     Hire Now <ChevronRight size={18} />
-                                </Link>
+                                </Button>
                             </div>
                         ))}
                     </div>

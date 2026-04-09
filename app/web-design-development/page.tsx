@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { ChevronRight } from "lucide-react";
 import bannerImage from "@/images/web-design-development.webp";
 
@@ -57,12 +58,13 @@ export default async function WebDevelopmentPage() {
                             and conversion rates by fusing creative talent with cutting-edge
                             technology.
                         </p>
-                        <Link
+                        <Button
                             href="/contact"
-                            className="inline-block px-7 py-3 bg-[#f29111] hover:bg-[#e08b1a] text-white font-medium rounded-sm transition-all text-[15px] uppercase tracking-wider"
+                            variant="primary"
+                            className="px-7 py-3 rounded-sm uppercase tracking-wider"
                         >
                             Get In Touch
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </section>

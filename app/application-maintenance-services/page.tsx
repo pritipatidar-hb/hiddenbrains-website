@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { ChevronRight, Globe, Smartphone, CheckCircle } from "lucide-react";
 import bgImage from "@/images/application-maintenance-services.webp";
 import { getData } from "@/lib/data";
@@ -49,12 +50,13 @@ export default async function ApplicationMaintenancePage() {
                         <p className="text-[18px] font-normal text-gray-200 mb-[25px] leading-relaxed font-medium  max-w-[609px]">
                             <span dangerouslySetInnerHTML={{ __html: "With Our Next Generation Customised App Maintenance Services<br/>Reduce Risks and Keep Your App Updated" }} />
                         </p>
-                        <Link
+                        <Button
                             href="/contact"
-                            className="inline-block px-7 py-3 bg-[#f29111] hover:bg-[#e08b1a] text-white font-medium rounded-sm transition-all text-[15px]"
+                            variant="primary"
+                            className="px-7 py-3 rounded-sm"
                         >
                             Get In Touch
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </section>

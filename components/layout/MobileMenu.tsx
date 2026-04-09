@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown, ChevronUp, X, Menu } from "lucide-react";
+import { Button } from "@/components/common/Button";
 import { MenuItem, MobileMenuProps } from '@/types/components/layout/MobileMenu';
 
 
@@ -65,13 +66,14 @@ export default function MobileMenu({ data }: MobileMenuProps) {
     return (
         <div className="lg:hidden flex items-center">
             {/* Mobile Toggle */}
-            <button
+            <Button
+                variant="ghost"
                 onClick={() => setIsOpen(true)}
-                className="text-gray-800 "
+                className="text-gray-800"
                 aria-label="Open Menu"
             >
                 <Menu size={28} />
-            </button>
+            </Button>
 
             {/* Mobile Menu Overlay */}
             {isOpen && (
@@ -80,26 +82,29 @@ export default function MobileMenu({ data }: MobileMenuProps) {
                         {/* Header */}
                         <div className="flex items-center justify-between p-4 border-b">
                             <span className="text-xl font-bold text-orange-500">Menu</span>
-                            <button
+                            <Button
+                                variant="ghost"
                                 onClick={() => setIsOpen(false)}
                                 className="p-2 text-gray-800"
                                 aria-label="Close Menu"
                             >
                                 <X size={28} />
-                            </button>
+                            </Button>
                         </div>
 
                         {/* Menu Content */}
                         <div className="flex-grow p-4 space-y-1">
                             {/* Simple Links */}
                             <div className="py-2">
-                                <button
+                                <Button
+                                    variant="ghost"
+                                    fullWidth
                                     onClick={() => toggleSection('company')}
-                                    className="flex items-center justify-between w-full py-3 border-b border-gray-100 text-[#14133b] font-medium"
+                                    className="flex items-center justify-between py-3 border-b border-gray-100 text-[#14133b] font-medium"
                                 >
                                     <span>Company</span>
                                     {expandedSections['company'] ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                                </button>
+                                </Button>
                                 {expandedSections['company'] && (
                                     <div className="pl-4 bg-slate-50 border-l-2 border-orange-500">
                                         {[
@@ -125,13 +130,15 @@ export default function MobileMenu({ data }: MobileMenuProps) {
 
                             {/* Services Section */}
                             <div className="py-2">
-                                <button
+                                <Button
+                                    variant="ghost"
+                                    fullWidth
                                     onClick={() => toggleSection('services')}
-                                    className="flex items-center justify-between w-full py-3 border-b border-gray-100 text-[#14133b] font-medium"
+                                    className="flex items-center justify-between py-3 border-b border-gray-100 text-[#14133b] font-medium"
                                 >
                                     <span>Services</span>
                                     {expandedSections['services'] ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                                </button>
+                                </Button>
                                 {expandedSections['services'] && (
                                     <div className="pl-4 bg-slate-50 border-l-2 border-orange-500">
                                         {data.SERVICES_MENU.map((item, idx) => (
@@ -143,13 +150,15 @@ export default function MobileMenu({ data }: MobileMenuProps) {
 
                             {/* Solutions Section */}
                             <div className="py-2">
-                                <button
+                                <Button
+                                    variant="ghost"
+                                    fullWidth
                                     onClick={() => toggleSection('solutions')}
-                                    className="flex items-center justify-between w-full py-3 border-b border-gray-100 text-[#14133b] font-medium"
+                                    className="flex items-center justify-between py-3 border-b border-gray-100 text-[#14133b] font-medium"
                                 >
                                     <span>Solutions</span>
                                     {expandedSections['solutions'] ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                                </button>
+                                </Button>
                                 {expandedSections['solutions'] && (
                                     <div className="pl-4 bg-slate-50 border-l-2 border-orange-500">
                                         {data.SOLUTIONS_MENU.map((item, idx) => (
@@ -161,13 +170,15 @@ export default function MobileMenu({ data }: MobileMenuProps) {
 
                             {/* Industries Section */}
                             <div className="py-2">
-                                <button
+                                <Button
+                                    variant="ghost"
+                                    fullWidth
                                     onClick={() => toggleSection('industries')}
-                                    className="flex items-center justify-between w-full py-3 border-b border-gray-100 text-[#14133b] font-medium"
+                                    className="flex items-center justify-between py-3 border-b border-gray-100 text-[#14133b] font-medium"
                                 >
                                     <span>Industries</span>
                                     {expandedSections['industries'] ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                                </button>
+                                </Button>
                                 {expandedSections['industries'] && (
                                     <div className="pl-4 bg-slate-50 border-l-2 border-orange-500">
                                         {data.INDUSTRIES_MENU.map((item, idx) => (
@@ -198,13 +209,15 @@ export default function MobileMenu({ data }: MobileMenuProps) {
 
                         {/* Footer Action */}
                         <div className="p-4 bg-gray-50">
-                            <Link
+                             <Button
                                 href="/contact"
-                                className="block w-full bg-orange-500 text-white py-4 rounded-lg text-center font-bold uppercase tracking-wider"
+                                variant="primary"
+                                fullWidth
+                                className="block text-white py-4 rounded-lg text-center font-bold uppercase tracking-wider"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Contact Us
-                            </Link>
+                            </Button>
                         </div>
                     </div>
                 </div>

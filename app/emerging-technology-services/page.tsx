@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { Button } from "@/components/common/Button";
 import { getData } from "@/lib/data";
 
 import {
@@ -49,12 +50,13 @@ export default async function EmergingTechnologyServicesPage() {
                         <p className=" text-[16px] md:text-[18px] font-normal text-gray-200 mb-[25px] leading-relaxed pr-10 max-w-[650px]">
                             Gain The First-Mover Advantage and A Competitive Edge With Our Expertise in Emerging Technologies
                         </p>
-                        <Link
+                        <Button
                             href="/contact"
-                            className="inline-block px-7 py-3 bg-[#f29111] hover:bg-[#e08b1a] text-white font-medium rounded-sm transition-all text-[15px] uppercase tracking-wider"
+                            variant="primary"
+                            className="px-7 py-3 rounded-sm uppercase tracking-wider"
                         >
                             Get In Touch
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </section>

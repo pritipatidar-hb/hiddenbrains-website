@@ -1,6 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { ArrowRight } from "lucide-react";
 import { HeroSectionProps } from '@/types/components/shared/HeroSection';
 
@@ -73,13 +74,13 @@ export function HeroSection({
                                     </p>
                                 )}
                                 <div className="flex flex-wrap gap-4">
-                                    <Link
+                                    <Button
                                         href={ctaHref}
-                                        className="inline-block px-7 py-3 bg-[#f29111] hover:bg-[#e08b1a] text-white font-medium rounded-sm transition-all text-[15px] uppercase tracking-wider"
+                                        variant="primary"
+                                        className="inline-block px-7 py-3 font-medium rounded-sm text-[15px] uppercase tracking-wider"
                                     >
                                         {ctaText}
-                                        {/* <ArrowRight className="w-5 h-5" /> */}
-                                    </Link>
+                                    </Button>
                                 </div>
                             </>
                         )}

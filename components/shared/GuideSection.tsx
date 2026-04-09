@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
+import { Button } from '@/components/common/Button';
 import { GuideItem, GuideDetail, GuideSectionProps } from '@/types/components/shared/GuideSection';
 
 
@@ -74,8 +75,9 @@ export const GuideSection: React.FC<GuideSectionProps> = ({
                     <div className="lg:w-1/3">
                         <div className="sticky top-24 border-t border-gray-100">
                             {items.map((item) => (
-                                <button
+                                <Button
                                     key={item.id}
+                                    variant="ghost"
                                     onClick={() => scrollToSection(item.id)}
                                     className={`w-full text-left group block py-6 px-1 border-b border-gray-100 transition-all flex justify-between items-center ${activeId === item.id
                                         ? 'text-[#f29111] border-r-[3px] border-r-[#f29111]'
@@ -86,7 +88,7 @@ export const GuideSection: React.FC<GuideSectionProps> = ({
                                         }`}>
                                         {item.label}
                                     </span>
-                                </button>
+                                </Button>
                             ))}
                         </div>
                     </div>
