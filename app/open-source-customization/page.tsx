@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import openSource from "@/images/open-source-customization.webp"; // Reusing the dark banner image
 
 import { getData } from "@/lib/data";
@@ -50,12 +51,13 @@ export default async function OpenSourceCustomizationPage() {
                         <p className=" text-[16px] md:text-[18px] max-w-[617px] text-gray-200 mb-8 leading-relaxed font-normal pr-10">
                             Our pool of highly trained open-source developers empowers us to understand your needs and seamlessly transform the app idea into reality. Based on our deep knowledge of various open-source platforms, we have developed many custom solutions for small to large-scale organisations.
                         </p>
-                        <Link
+                        <Button
                             href="/contact"
-                            className="inline-block px-7 py-3 bg-[#f29111] hover:bg-[#e08b1a] text-white font-medium rounded-sm transition-all text-[15px] uppercase tracking-wider"
+                            variant="primary"
+                            className="px-7 py-3 rounded-sm uppercase tracking-wider"
                         >
                             Get in Touch
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -122,12 +124,13 @@ export default async function OpenSourceCustomizationPage() {
                                         {tech.desc}
                                     </p>
 
-                                    <Link
+                                    <Button
                                         href={tech.link || "#"}
-                                        className="inline-flex items-center !text-[#14133b] font-semibold uppercase text-[13px] tracking-widest mt-auto group/btn transition-all duration-300"
+                                        variant="ghost"
+                                        className="inline-flex items-center !text-[#14133b] font-semibold uppercase text-[13px] tracking-widest mt-auto group/btn transition-all duration-300 px-0"
                                     >
                                         EXPLORE <span className="ml-[14px] w-[35px] h-[2px] bg-[#14133b] group-hover/btn:w-[45px] transition-all duration-300"></span>
-                                    </Link>
+                                    </Button>
                                 </div>
                             );
                         })}

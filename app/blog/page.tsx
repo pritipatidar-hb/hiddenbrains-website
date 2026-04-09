@@ -7,6 +7,7 @@ import TitleBanner from '@/images/bg-titlebar.jpg';
 import { BLOG_POSTS, POPULAR_POSTS, BLOG_ARCHIVES, BLOG_CATEGORIES } from '@/lib/blog-data';
 
 import { Facebook, Twitter, Linkedin, Youtube, Search } from 'lucide-react';
+import { Button } from "@/components/common/Button";
 
 export const metadata = {
     title: "Latest Blogs on Mobile & Web IT solutions | Hidden Brains UK",
@@ -95,16 +96,49 @@ export default async function BlogPage() {
                             {/* Pagination */}
                             <div className="mt-16 flex justify-center">
                                 <nav className="flex items-center gap-2">
-                                    <span className="w-10 h-10 flex items-center justify-center bg-orange-500 text-white font-bold rounded">1</span>
-                                    <Link href="/blog/page/2" className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors font-bold rounded">2</Link>
-                                    <Link href="/blog/page/3" className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors font-bold rounded">3</Link>
-                                    <Link href="/blog/page/4" className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors font-bold rounded">4</Link>
+                                    <Button
+                                        variant="primary"
+                                        className="w-10 h-10 flex items-center justify-center font-bold rounded"
+                                    >
+                                        1
+                                    </Button>
+                                    <Button
+                                        href="/blog/page/2"
+                                        variant="ghost"
+                                        className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors font-bold rounded px-0"
+                                    >
+                                        2
+                                    </Button>
+                                    <Button
+                                        href="/blog/page/3"
+                                        variant="ghost"
+                                        className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors font-bold rounded px-0"
+                                    >
+                                        3
+                                    </Button>
+                                    <Button
+                                        href="/blog/page/4"
+                                        variant="ghost"
+                                        className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors font-bold rounded px-0"
+                                    >
+                                        4
+                                    </Button>
                                     <span className="px-2 text-gray-400">...</span>
-                                    <Link href="/blog/page/61" className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors font-bold rounded">61</Link>
-                                    <Link href="/blog/page/2" className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors rounded">
+                                    <Button
+                                        href="/blog/page/61"
+                                        variant="ghost"
+                                        className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors font-bold rounded px-0"
+                                    >
+                                        61
+                                    </Button>
+                                    <Button
+                                        href="/blog/page/2"
+                                        variant="ghost"
+                                        className="w-10 h-10 flex items-center justify-center bg-gray-50 text-[#14133b] hover:bg-orange-500 hover:text-white transition-colors rounded px-0"
+                                    >
                                         <span className="sr-only">Next</span>
                                         <span className="font-bold">→</span>
-                                    </Link>
+                                    </Button>
                                 </nav>
                             </div>
                         </div>
@@ -122,9 +156,12 @@ export default async function BlogPage() {
                                             placeholder="Search posts..."
                                             className="w-full bg-gray-50 border border-gray-100 py-3 pl-4 pr-12 rounded-lg outline-none focus:border-orange-500 transition-colors"
                                         />
-                                        <button className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-orange-500 transition-colors">
+                                        <Button 
+                                            variant="ghost" 
+                                            className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-orange-500 transition-colors"
+                                        >
                                             <Search size={20} />
-                                        </button>
+                                        </Button>
                                     </div>
                                 </div>
 

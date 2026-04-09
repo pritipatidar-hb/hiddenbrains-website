@@ -1,5 +1,4 @@
-import React from 'react';
-import Link from 'next/link';
+import { Button } from '@/components/common/Button';
 
 interface HiringModel {
     title: string;
@@ -77,15 +76,14 @@ export const HiringModelsSection = ({
                                 ))}
                             </ul>
 
-                            <Link
+                            <Button
                                 href={ctaHref}
-                                className={`inline-block w-full py-4 rounded-2xl font-bold transition-all duration-300 text-center shadow-md hover:shadow-xl ${model.active
-                                    ? 'bg-[#f29111] text-white hover:bg-orange-600'
-                                    : 'border-2 border-[#f29111] !text-[#f29111] hover:bg-[#f29111] hover:text-white'
-                                    }`}
+                                variant={model.active ? "primary" : "outline"}
+                                fullWidth
+                                className={`py-4 rounded-2xl font-bold transition-all duration-300 text-center shadow-md hover:shadow-xl ${!model.active ? "border-2 border-[#f29111] !text-[#f29111] hover:bg-[#f29111] hover:text-white" : ""}`}
                             >
                                 Hire Now
-                            </Link>
+                            </Button>
                         </article>
                     ))}
                 </div>

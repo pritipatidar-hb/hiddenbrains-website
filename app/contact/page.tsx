@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import {
   Briefcase,
   Trophy,
@@ -133,12 +134,15 @@ export default async function ContactPage() {
 
                 <ReCaptchaCheckbox />
 
-                <button
+                <Button
                   type="submit"
-                  className="w-full py-[10px] px-[30px] bg-[#f29111] text-white text-[15px] font-medium rounded-[4px] hover:bg-orange-600 transition-all shadow-lg shadow-orange-500/20 uppercase tracking-wider"
+                  variant="primary"
+                  size="md"
+                  fullWidth
+                  className="rounded-[4px] shadow-lg shadow-orange-500/20 uppercase tracking-wider"
                 >
                   Submit
-                </button>
+                </Button>
               </form>
             </div>
           </div>

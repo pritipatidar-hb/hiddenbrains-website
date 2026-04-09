@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { getData } from "@/lib/data";
 import { HeroSection } from "@/components/shared/HeroSection";
 import { IntroductionSection } from "@/components/shared/IntroductionSection";
@@ -201,9 +202,14 @@ export default async function HireMobileDevelopersPage() {
                                             </li>
                                         ))}
                                     </ul>
-                                    <Link href="/contact" className={`w-full py-3 rounded-md font-semibold transition-colors ${model.active ? 'bg-[#f29111] text-white hover:bg-[#d9810f]' : 'border border-[#f29111] !text-[#f29111] hover:bg-orange-50'}`}>
+                                    <Button
+                                        href="/contact"
+                                        variant={model.active ? "primary" : "outline"}
+                                        fullWidth
+                                        className={`py-3 rounded-md font-semibold transition-colors ${!model.active ? 'border border-[#f29111] !text-[#f29111] hover:bg-orange-50' : 'hover:bg-[#d9810f]'}`}
+                                    >
                                         Hire Now
-                                    </Link>
+                                    </Button>
                                 </div>
                             ))}
                         </div>

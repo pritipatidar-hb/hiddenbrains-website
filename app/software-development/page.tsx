@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic';
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { ChevronRight } from "lucide-react";
 import bannerImage from "@/images/slide1.webp";
 
@@ -50,12 +51,13 @@ export default async function SoftwareDevelopmentPage() {
                         <p className=" text-[16px] md:text-[18px] font-normal text-gray-200 mb-8 leading-relaxed font-medium pr-10 max-w-[609px]">
                             Having established itself as an award-winning custom software development company in the UK, Hidden Brains is committed to bringing secure, robust, and scalable software development services to startups, SMEs, and enterprises.
                         </p>
-                        <Link
+                        <Button
                             href="/contact"
-                            className="inline-block px-7 py-3 bg-[#f29111] hover:bg-[#e08b1a] text-white font-medium rounded-sm transition-all text-[15px] uppercase tracking-wider"
+                            variant="primary"
+                            className="px-7 py-3 rounded-sm uppercase tracking-wider"
                         >
                             Get In Touch
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </section>

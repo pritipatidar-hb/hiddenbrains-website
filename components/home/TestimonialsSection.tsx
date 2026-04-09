@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/common/Button";
 import { Play } from "lucide-react";
 import { Testimonial } from "@/types/components/HomeView";
 import { VideoModal } from "../shared/VideoModal";
@@ -46,7 +47,7 @@ export const TestimonialsSection = ({ testimonials }: TestimonialsSectionProps) 
                             </article>
                         ))}
                         <div className="mt-4 md:mt-0 flex justify-center md:justify-start">
-                            <Link href="/testimonials" className="inline-flex items-center py-2 px-6 md:py-[10px] md:px-[30px] bg-[#f29111] !text-[#fff] font-bold rounded-lg shadow-sm hover:bg-[#e08b1a] transition-all duration-300 text-sm md:text-[15px] font-[500 ]">View All</Link>
+                            <Button href="/testimonials" variant="primary" className="inline-flex items-center py-2 px-6 md:py-[10px] md:px-[30px] !text-[#fff] font-bold rounded-lg shadow-sm text-sm md:text-[15px] font-[500 ]">View All</Button>
                         </div>
                     </div>
                 </div>
