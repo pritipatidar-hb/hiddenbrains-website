@@ -125,15 +125,6 @@ export default async function IPhoneAppDevelopmentPage() {
                             Being rooted for 20+ years in the app development industry, we have gained immense experience in understanding the client needs of different industries. Therefore, we offer app development solutions to:
                         </p>
                     </div>
-
-                    {/* <MobileIndustrySlider
-                        industries={INDUSTRIES_SERVED.map(i => ({
-                            title: i.name,
-                            content: i.desc,
-                            image: i.image,
-                            link: i.link
-                        }))}
-                    /> */}
                     <IndustrySlider industries={REACT_JS_INDUSTRIES} />
                 </div>
             </section>
