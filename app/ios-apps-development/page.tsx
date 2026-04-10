@@ -26,6 +26,7 @@ import { CtaSection } from "@/components/shared/CtaSection";
 import { IntroductionSection } from "@/components/shared/IntroductionSection";
 import { MobileIndustrySlider } from "@/components/shared/MobileIndustrySlider";
 import { ProcessSection } from "@/components/shared/ProcessSection";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 import iosBanner from "@/images/ios-apps-development.webp";
 import { IndustrySlider } from '@/components/shared/IndustrySlider';
 import { REACT_JS_INDUSTRIES } from '@/lib/react-js-development-data';
@@ -52,8 +53,6 @@ export default async function IosAppDevelopmentPage() {
             <IntroductionSection
                 bgColor="bg-[#f8faff]"
                 breadcrumbs={[
-                    // { label: "Home", href: "/" },
-                    // { label: "Mobile App Development", href: "/mobile-application-development" },
                     { label: "iOS App Development" }
                 ]}
                 title="Best iOS App Development Company in the UK"
@@ -74,30 +73,15 @@ export default async function IosAppDevelopmentPage() {
             <CtaSection title="Let’s get started on your Mobile App Development project!" />
 
             {/* Services Section */}
-            <section className="py-[50px] bg-white">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="text-center  mx-auto mb-[30px]">
-                        <h2 className="text-3xl md:text-[36px] font-semibold text-[#14133b] mb-[18px]">
-                            Our iOS App Development Services in the UK
-                        </h2>
-                        <p className="text-[#6a7c92] text-[19px] font-normal leading-relaxed">
-                            Our custom iOS application development services in the UK are globally recognized for developing secure, scalable, and reliable digital solutions.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {IOS_SERVICES.map((service, index) => (
-                            <div key={index} className="pt-[40px] px-[40px] pb-[40px] border border-gray-100 shadow-sm hover:shadow-lg transition-all border-b-4 hover:border-b-[#f29111] bg-white">
-                                <h3 className="text-[22px] font-semibold text-[#14133b] mb-4">{service.title}</h3>
-                                <p className="text-[#6a7c92] leading-relaxed font-normal
- text-[15px]">
-                                    {service.content}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                title="Our iOS App Development Services in the UK"
+                description="Our custom iOS application development services in the UK are globally recognized for developing secure, scalable, and reliable digital solutions."
+                variant="simple"
+                services={IOS_SERVICES.map(service => ({
+                    title: service.title,
+                    description: service.content
+                }))}
+            />
 
             {/* Industries Slider Section */}
             <section className="py-[30px] bg-[#f8faff]">

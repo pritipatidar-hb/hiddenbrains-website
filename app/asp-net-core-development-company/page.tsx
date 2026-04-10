@@ -10,6 +10,7 @@ import { IndustrySlider } from "@/components/shared/IndustrySlider";
 import { GuideSection } from "@/components/shared/GuideSection";
 import { CtaSection } from "@/components/shared/CtaSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 
 import banner from "@/images/php-web-development.webp";
 
@@ -57,7 +58,7 @@ export default async function AspNetCoreDevelopmentPage() {
                             With a dedicated team of .NET programmers, our development team is capable of providing enterprise-grade solutions using ASP.NET Core tools across industries.To ensure it perfectly meets their needs, we enable organizations to choose from multi-tier, microservices, and cloud-based architecture types.
                         </p>
                         <p className="mb-[10px]">
-                             Hidden Brains creates applications for almost any type of business—a startup, small-scale business, or large enterprise. To keep our clients at the forefront of the market competition, we design and implement the latest advances, such as chatbots and BI, to meet our customers' needs.
+                            Hidden Brains creates applications for almost any type of business—a startup, small-scale business, or large enterprise. To keep our clients at the forefront of the market competition, we design and implement the latest advances, such as chatbots and BI, to meet our customers' needs.
                         </p>
                         <p className="mb-[10px]">
                             With industry-recognized platforms and frameworks, we have an expert application developer on the team to create a cutting-edge system to help your business meet its goals. We also offer various API integrations that can be used to seamlessly connect existing systems into new ones. If you're not sure how we can help with your project, don't hesitate to get in touch with us today.
@@ -71,25 +72,17 @@ export default async function AspNetCoreDevelopmentPage() {
             />
 
             {/* Services Section */}
-            <section className="py-[50px] bg-gray-50 text-[#14133b]">
-                <div className="container mx-auto px-6 max-w-7xl text-center">
-                    <h2 className="text-[26px] md:text-[36px] font-bold mb-[18px] text-[#14133b]">ASP.NET Core Development Services Provided By Us In The UK</h2>
-                    <p className=" mx-auto text-[#6a7c92] text-[16px] md:text-lg mb-16Leading-relaxed">
-                        We regularly offer training for our ASP.NET Core developers to keep them knowledgeable about the newest technologies and trends, helping us to maintain our reputation in the market for providing high-end digital solutions. Hidden Brains UK can be your one-stop platform for ASP.Net Core web development needs.
-                    </p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left mt-[30px]">
-                        {ASP_NET_CORE_SERVICES.map((service, idx) => (
-                            <div key={idx} className="bg-white p-10 shadow-sm hover:shadow-xl transition-all duration-300 border-b-4 border-transparent hover:border-orange-500 group border border-gray-100 h-full">
-                                <div className="mb-6 text-[#f29111] transition-transform duration-300 group-hover:scale-110">
-                                    {service.icon}
-                                </div>
-                                <h3 className="text-[19px] font-bold mb-4 group-hover:text-orange-500 transition-colors uppercase tracking-tight">{service.title}</h3>
-                                <p className="text-[#6a7c92] text-[16px] leading-relaxed flex-grow">{service.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                title="ASP.NET Core Development Services Provided By Us In The UK"
+                description="We regularly offer training for our ASP.NET Core developers to keep them knowledgeable about the newest technologies and trends, helping us to maintain our reputation in the market for providing high-end digital solutions. Hidden Brains UK can be your one-stop platform for ASP.Net Core web development needs."
+                variant="simple"
+                background="bg-gray-50"
+                services={ASP_NET_CORE_SERVICES.map(service => ({
+                    title: service.title,
+                    description: service.desc,
+                    icon: service.icon
+                }))}
+            />
 
             {/* Industry Section */}
             <section className="py-[50px] bg-white">

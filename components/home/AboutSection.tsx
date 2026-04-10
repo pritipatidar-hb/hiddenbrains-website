@@ -1,4 +1,5 @@
 import React from "react";
+import { Section } from "../shared/Section";
 
 export const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => (
     <div className="bg-white border border-gray-100 rounded-lg p-5 md:p-[15px] my-3 md:mt-[15px] md:mb-[15px] shadow-sm hover:shadow-xl transition-all duration-300 group min-h-[220px] md:min-h-[250px]">
@@ -23,7 +24,7 @@ import { AboutSectionProps } from '@/types/components/home/AboutSection';
 
 export const AboutSection = ({ whoWeAre, whyChooseUs }: AboutSectionProps) => {
     return (
-        <section className="relative py-12 lg:py-24 overflow-hidden bg-white">
+        <Section background="bg-white" className="py-12 lg:py-24">
             <RowOverlay />
             <div className="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6">
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
@@ -55,6 +56,6 @@ export const AboutSection = ({ whoWeAre, whyChooseUs }: AboutSectionProps) => {
                     </div>
                 </div>
             </div>
-        </section>
+        </Section>
     );
 };

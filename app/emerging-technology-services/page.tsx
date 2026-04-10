@@ -16,6 +16,7 @@ import {
 
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { IntroductionSection } from "@/components/shared/IntroductionSection";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 import { HeroSection } from "@/components/shared/HeroSection";
 import emergingTechnologyServicesBanner from "@/images/emerging-technology-services-Banner.webp";
 export const metadata = {
@@ -71,37 +72,18 @@ export default async function EmergingTechnologyServicesPage() {
             />
 
             {/* Services Section */}
-            <section className="py-[60px] bg-white text-[#14133b]">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="text-center mb-[30px]">
-                        <h2 className="text-[26px] md:text-[36px] font-semibold mb-[18px]">Emerging Technologies Services</h2>
-                        <p className="text-[#6a7c92] text-[16px] md:text-[18px] mx-auto font-normal leading-relaxed max-w-[800px]">
-                            Our emerging technology services are based on proper R&D that allows you to leverage the next generation experience.
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {EMERGING_SERVICES.map((service, index) => (
-                            <div key={index} className="bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group rounded-md overflow-hidden flex flex-col p-[35px]">
-                                <div className="h-[50px] w-[50px] relative   mb-[15px]">
-                                    <Image src={service.image} alt={service.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                                </div>
-                                <div className=" flex-1 flex flex-col justify-between">
-                                    <div>
-                                        <h3 className="text-[22px] font-semibold text-[#14133b] mb-[11px] group-hover:text-orange-500 transition-colors">{service.title}</h3>
-                                        <p className="text-[#6a7c92] text-[15px] leading-relaxed font-normal mb-[12px]">{service.desc}</p>
-                                    </div>
-                                    <div className="mt-auto">
-                                        <Link href={service.link} className="inline-flex items-center text-[#14133b] font-semibold uppercase text-[13px] group-hover:text-orange-500 transition-colors tracking-wide">
-                                            Explore
-                                            <ChevronRight size={18} className="ml-1" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                title="Emerging Technologies Services"
+                description="Our emerging technology services are based on proper R&D that allows you to leverage the next generation experience."
+                variant="colorful"
+                background="bg-white"
+                services={EMERGING_SERVICES.map(service => ({
+                    title: service.title,
+                    description: service.desc,
+                    image: service.image,
+                    link: service.link
+                }))}
+            />
 
             {/* How We Work on Emerging Technologies Section */}
             <section className="py-[60px] bg-[#f8faff]">

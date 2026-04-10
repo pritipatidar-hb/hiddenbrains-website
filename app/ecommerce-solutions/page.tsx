@@ -1,9 +1,11 @@
 import dynamic from 'next/dynamic';
 import React from "react";
+import { HeroSection } from "@/components/shared/HeroSection";
+import { ServicesSection } from "@/components/shared/ServicesSection";
+import bannerImage from "@/images/web-design-development.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/common/Button";
-import bannerImage from "@/images/web-design-development.webp";
 
 import { getData } from "@/lib/data";
 import {
@@ -18,6 +20,7 @@ import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 
 import { IntroductionSection } from "@/components/shared/IntroductionSection";
 import { ProcessSection } from "@/components/shared/ProcessSection";
+import { FeatureDetailedGrid } from "@/components/shared/FeatureDetailedGrid";
 
 export const metadata = {
     title: "eCommerce Website Development Company UK | Hidden Brains",
@@ -30,32 +33,17 @@ export default async function EcommerceSolutionsPage() {
 
     return (
         <main className="min-h-screen bg-white">
-            {/* Banner Section */}
-            <section className="relative min-h-[500px] flex items-center pt-20 pb-20 overflow-hidden text-white">
-                <div className="absolute inset-0 z-0">
-                    <Image src={bannerImage} alt="eCommerce Website Development Company UK" fill className="object-cover" priority />
-                    <div className="absolute inset-0 bg-black/50"></div>
-                </div>
-
-                <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="max-w-[650px]">
-                        <h1 className="text-[28px] md:text-[50px] font-semibold md:leading-[60px] mb-[15px] mt-4">
-                            eCommerce Website Development Company <br /> UK
-                        </h1>
-                        <p className=" text-[16px] md:text-lg text-gray-200 mb-[25px] leading-relaxed font-normal pr-10">
-                            Leading eCommerce Website Development Company in The UK Offering Robust eCommerce Solutions
-                        </p>
-                        <Button
-                            href="/contact"
-                            variant="primary"
-                            className="px-7 py-3 rounded-sm uppercase tracking-wider"
-                        >
-                            Get in Touch
-                        </Button>
-                    </div>
-                </div>
-            </section>
-
+            <HeroSection
+                banner={bannerImage}
+                alt="eCommerce Website Development Company UK"
+                title={<>eCommerce Website Development Company <br /> UK</>}
+                description="Leading eCommerce Website Development Company in The UK Offering Robust eCommerce Solutions"
+                ctaText="Get in Touch"
+                ctaHref="/contact"
+                minHeight="500px"
+                className="pt-20 pb-20"
+                darkOverlay={true}
+            />
             {/* Introduction Section */}
             <IntroductionSection
                 bgColor="bg-[#f8faff]"
@@ -77,48 +65,22 @@ export default async function EcommerceSolutionsPage() {
             />
 
             {/* Services Section */}
-            <section className="py-[50px] bg-white text-[#14133b]">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="text-center mb-16">
-                        <h2 className="text-[26px] md:text-[36px] font-semibold mb-[18px]">Our Ecommerce Development Services</h2>
-                        <div className="text-[#6a7c92] text-[16px] md:text-[19px] mx-auto font-normal leading-relaxed">
-                            Scale up your business productivity with our effective E-commerce services.
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {ECOMMERCE_SERVICES.map((service, index) => {
-                            const bgHoverMap: Record<string, string> = {
-                                orange: "hover:bg-[#fff9f0]",
-                                pink: "hover:bg-[#fcecf0]",
-                                dark: "hover:bg-[#f0f4f8]",
-                                green: "hover:bg-[#f0fdf4]",
-                                yellow: "hover:bg-[#fffbeb]",
-                                purple: "hover:bg-[#f8f0f8]"
-                            };
-                            const hoverBg = bgHoverMap[service.color] || "hover:bg-gray-50";
-
-                            return (
-                                <div key={index} className={`bg-[#f8faff] border border-gray-100 p-[35px] transition-colors duration-300 ${hoverBg} group flex flex-col rounded-sm shadow-sm hover:shadow-md`}>
-                                    <div className="mb-[15px] w-[57px] h-[57px] relative overflow-hidden flex items-center justify-center">
-                                        <Image src={service.image} alt={service.title} fill className="object-contain transition-transform duration-700 group-hover:scale-105" />
-                                    </div>
-                                    <h3 className="text-[22px] font-semibold text-[#14133b] mb-[11px] group-hover:text-[#f29111] transition-colors">{service.title}</h3>
-                                    <p className="text-[#6a7c92] text-[15px] font-normal leading-relaxed mb-8 flex-grow">
-                                        {service.desc}
-                                    </p>
-                                    <Link
-                                        href={service.link || "#"}
-                                        className="inline-flex items-center text-[#14133b] font-semibold text-[13px] tracking-widest mt-auto group/btn transition-all duration-300 uppercase"
-                                    >
-                                        Explore <span className="ml-[14px] w-[35px] h-[2px] bg-[#14133b] group-hover/btn:w-[45px] transition-all duration-300"></span>
-                                    </Link>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-
+            <ServicesSection
+                title="Our Ecommerce Development Services"
+                description="Scale up your business productivity with our effective E-commerce services."
+                variant="colorful"
+                services={ECOMMERCE_SERVICES.map(service => ({
+                    ...service,
+                    hoverBg: {
+                        orange: "hover:bg-[#fff9f0]",
+                        pink: "hover:bg-[#fcecf0]",
+                        dark: "hover:bg-[#f0f4f8]",
+                        green: "hover:bg-[#f0fdf4]",
+                        yellow: "hover:bg-[#fffbeb]",
+                        purple: "hover:bg-[#f8f0f8]"
+                    }[service.color] || "hover:bg-gray-50"
+                }))}
+            />
             {/* Process Section */}
             <ProcessSection
                 title="eCommerce Web Development Process"
@@ -130,40 +92,22 @@ export default async function EcommerceSolutionsPage() {
             />
 
             {/* Info Images Boxes */}
-            <section className="py-[50px] bg-white">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {INFO_BOXES.map((box, index) => (
-                            <div key={index} className="group flex flex-col bg-[#f8faff] rounded-sm shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
-                                <div className="h-[250px] relative overflow-hidden w-full">
-                                    <Image src={box.image} alt={box.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                                </div>
-                                <div className="p-8 flex-grow">
-                                    <div className="mb-6 w-[70px] h-[70px] bg-[#fff] absolute mt-[-64px] md:ml-[243px] lg:ml-[200px] rounded-full flex items-center justify-center text-[#f29111]">
-                                        <svg viewBox="0 0 64 64" fill="none" stroke="#14133b" strokeWidth="2" strokeMiterlimit="10" width="35" height="35">
-                                            <path d="M1,59L22,51L42,59L63,51L63,5L42,13L22,5L1,13Z"></path>
-                                            <path d="M22,5L22,51"></path>
-                                            <path d="M42,13L42,59"></path>
-                                        </svg>
-                                    </div>
-                                    <h6 className="text-[22px] font-semibold pt-[15px]  text-[#14133b] mb-4 group-hover:text-black transition-colors">{box.title}</h6>
-                                    {box.isList ? (
-                                        <ul className="text-[#6a7c92] text-[15px] font-normal leading-relaxed space-y-2 list-disc pl-5">
-                                            {(box.content as string[]).map((item, i) => (
-                                                <li key={i}>{item}</li>
-                                            ))}
-                                        </ul>
-                                    ) : (
-                                        <p className="text-[#6a7c92] text-[15px] font-normal leading-relaxed">
-                                            {box.content}
-                                        </p>
-                                    )}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureDetailedGrid
+                items={INFO_BOXES.map((box) => ({
+                    title: box.title,
+                    image: box.image,
+                    icon: (
+                        <svg viewBox="0 0 64 64" fill="none" stroke="#14133b" strokeWidth="2" strokeMiterlimit="10" width="35" height="35">
+                            <path d="M1,59L22,51L42,59L63,51L63,5L42,13L22,5L1,13Z"></path>
+                            <path d="M22,5L22,51"></path>
+                            <path d="M42,13L42,59"></path>
+                        </svg>
+                    ),
+                    description: !box.isList ? box.content : undefined,
+                    items: box.isList ? (box.content as string[]) : undefined,
+                }))}
+                bgClass="bg-white"
+            />
 
             {/* Portfolio Section */}
             <PortfolioSection

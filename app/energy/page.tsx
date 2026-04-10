@@ -3,6 +3,7 @@ import React from "react";
 import { getData } from "@/lib/data";
 import { HeroSection } from "@/components/shared/HeroSection";
 import { IntroductionSection } from "@/components/shared/IntroductionSection";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 
 
 import energyBanner from "@/images/Energy-Industries-Banner.webp";
@@ -51,38 +52,19 @@ export default async function EnergyPage() {
             />
 
             {/* Services Section */}
-            <section className="py-[60px] bg-[#f8faff]">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-12 items-center mb-[40px]">
-                        <div>
-                            <h5 className="text-[#f29111] font-bold text-[14px] uppercase tracking-widest mb-4">
-                                {ENERGY_SERVICES.subtitle}
-                            </h5>
-                            <h2 className="text-[26px] md:text-[36px] font-semibold text-[#14133b] mb-[18px] leading-tight">
-                                {ENERGY_SERVICES.title}
-                            </h2>
-                        </div>
-                        <div>
-                            <p className="text-[#6a7c92] text-[19px] font-normal leading-relaxed">
-                                {ENERGY_SERVICES.description}
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-                        {ENERGY_SERVICES.items.map((service, index) => (
-                            <div key={index} className="p-10 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
-                                <div className="mb-6 text-[#f29111] transition-transform duration-300 group-hover:scale-110">
-                                    {service.icon}
-                                </div>
-                                <h3 className="text-[20px] font-bold text-[#14133b] mb-4 group-hover:text-orange-500 transition-colors tracking-tight">
-                                    {service.title}
-                                </h3>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                subtitle={ENERGY_SERVICES.subtitle}
+                title={ENERGY_SERVICES.title}
+                description={ENERGY_SERVICES.description}
+                headerAlign="split"
+                columns={4}
+                variant="simple"
+                background="bg-[#f8faff]"
+                services={ENERGY_SERVICES.items.map(service => ({
+                    title: service.title,
+                    icon: service.icon
+                }))}
+            />
 
             {/* Features List Section */}
             <section className="py-[60px] bg-white relative overflow-hidden">

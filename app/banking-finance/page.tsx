@@ -3,6 +3,7 @@ import React from "react";
 import { getData } from "@/lib/data";
 import { HeroSection } from "@/components/shared/HeroSection";
 import { IntroductionSection } from "@/components/shared/IntroductionSection";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 
 
 
@@ -51,42 +52,21 @@ export default async function BankingFinancePage() {
                 }
             />
 
-            {/* Services Section */}
-            <section className="py-[60px] bg-[#f8faff]">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-12 items-center mb-[40px]">
-                        <div>
-                            <h5 className="text-[#f29111] font-bold text-[14px] uppercase tracking-widest mb-4">
-                                {BANKING_SERVICES.subtitle}
-                            </h5>
-                            <h2 className="text-[26px] md:text-[36px] font-semibold text-[#14133b] mb-[18px] leading-tight">
-                                {BANKING_SERVICES.title}
-                            </h2>
-                        </div>
-                        <div>
-                            <p className="text-[#6a7c92] text-[19px] font-normal leading-relaxed">
-                                {BANKING_SERVICES.description}
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-                        {BANKING_SERVICES.items.map((service, index) => (
-                            <div key={index} className="p-10 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100 group">
-                                <div className="mb-6 text-[#f29111] transition-transform duration-300 group-hover:scale-110">
-                                    {service.icon}
-                                </div>
-                                <h3 className="text-[20px] font-bold text-[#14133b] mb-4 group-hover:text-orange-500 transition-colors tracking-tight">
-                                    {service.title}
-                                </h3>
-                                <p className="text-[#6a7c92] text-[15px] leading-relaxed">
-                                    {service.content}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            {/* Industry IT Solutions Section */}
+            <ServicesSection
+                subtitle={BANKING_SERVICES.subtitle}
+                title={BANKING_SERVICES.title}
+                description={BANKING_SERVICES.description}
+                headerAlign="split"
+                columns={4}
+                variant="simple"
+                background="bg-[#f8faff]"
+                services={BANKING_SERVICES.items.map(service => ({
+                    title: service.title,
+                    description: service.content,
+                    icon: service.icon
+                }))}
+            />
 
             {/* Software Solutions List */}
             <section className="py-[60px] bg-white relative overflow-hidden">
@@ -117,31 +97,18 @@ export default async function BankingFinancePage() {
                 </div>
             </section>
 
-            {/* Detailed Solutions Grid */}
-            <section className="py-[60px] bg-[#f8faff]">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="text-center mb-16">
-                        <h2 className="text-[26px] md:text-[36px] font-semibold text-[#14133b]">
-                            {BANKING_SOLUTIONS.title}
-                        </h2>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {BANKING_SOLUTIONS.items.map((solution, index) => (
-                            <div key={index} className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 group border border-gray-100 flex flex-col h-full hover:-translate-y-2 p-8">
-                                <div className="mb-6 w-16 h-16 bg-[#f8faff] rounded-2xl flex items-center justify-center text-[#f29111] transition-all duration-500 group-hover:bg-[#f29111] group-hover:text-white group-hover:rotate-6">
-                                    {solution.icon}
-                                </div>
-                                <h3 className="text-[22px] font-bold text-[#14133b] mb-4 group-hover:text-orange-500 transition-colors">
-                                    {solution.title}
-                                </h3>
-                                <p className="text-[#6a7c92] leading-relaxed text-[15px] font-normal">
-                                    {solution.content}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            {/* Financial IT Solutions Section */}
+            <ServicesSection
+                title={BANKING_SOLUTIONS.title}
+                columns={4}
+                variant="simple"
+                background="bg-[#f8faff]"
+                services={BANKING_SOLUTIONS.items.map(solution => ({
+                    title: solution.title,
+                    description: solution.content,
+                    icon: solution.icon
+                }))}
+            />
             <PortfolioSection
                 projects={data.PROJECTS.slice(0, 8)}
                 title={BANKING_CTA.title}

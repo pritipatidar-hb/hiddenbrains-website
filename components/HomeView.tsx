@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 import { HeroSection } from "./home/Hero";
 import { ClientLogos } from "./home/ClientLogos";
 import { AboutSection } from "./home/AboutSection";
-import { ServicesSection } from "./home/ServicesSection";
+import { ServicesSection } from "./shared/ServicesSection";
 const PortfolioSection = dynamic(() => import("./home/PortfolioSection").then(mod => mod.PortfolioSection));
 const ProcessSection = dynamic(() => import("./home/ProcessSection").then(mod => mod.ProcessSection));
 const TestimonialsSection = dynamic(() => import("./home/TestimonialsSection").then(mod => mod.TestimonialsSection));
@@ -55,6 +55,7 @@ export default function HomeView({ data }: {
             <ServicesSection
                 title={HOME_CONTENT.SERVICES_SECTION.title}
                 services={SERVICES}
+                variant="home"
             />
 
             <PortfolioSection

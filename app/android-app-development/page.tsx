@@ -23,6 +23,7 @@ import { GuideSection } from "@/components/shared/GuideSection";
 import { CtaSection } from "@/components/shared/CtaSection";
 import { IntroductionSection } from "@/components/shared/IntroductionSection";
 import { MobileIndustrySlider } from "@/components/shared/MobileIndustrySlider";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 import androidBanner from "@/images/android-apps-development.webp";
 
 export const metadata = {
@@ -72,29 +73,15 @@ export default async function AndroidAppDevelopmentPage() {
             <CtaSection title="Let’s get started on your Mobile App Development project!" />
 
             {/* Services Section */}
-            <section className="py-[50px] bg-white">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="text-center  mx-auto mb-[30px]">
-                        <h2 className="text-3xl md:text-[36px] font-semibold text-[#14133b] mb-[18px]">
-                            Our Custom Android Application Development Services Include
-                        </h2>
-                        <p className="text-[#6a7c92] text-[18px] font-normal leading-relaxed">
-                            With 22+ years of experience in customizing Android app development solutions, Hidden Brains is recognized as one of the dominating Android app development companies in the UK.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {ANDROID_SERVICES.map((service, index) => (
-                            <div key={index} className="p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all border-b-4 hover:border-b-[#f29111] bg-white">
-                                <h3 className="text-[22px] font-bold text-[#14133b] mb-4">{service.title}</h3>
-                                <p className="text-[#6a7c92] leading-relaxed text-[15px]">
-                                    {service.content}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                title="Our Custom Android Application Development Services Include"
+                description="With 22+ years of experience in customizing Android app development solutions, Hidden Brains is recognized as one of the dominating Android app development companies in the UK."
+                variant="simple"
+                services={ANDROID_SERVICES.map(service => ({
+                    title: service.title,
+                    description: service.content
+                }))}
+            />
 
             {/* Industries Slider Section */}
             <section className="py-[50px] bg-[#f8faff]">

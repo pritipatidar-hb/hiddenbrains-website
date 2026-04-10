@@ -6,6 +6,7 @@ import { IntroductionSection } from "@/components/shared/IntroductionSection";
 import { HeroSection } from "@/components/shared/HeroSection";
 import { IndustryGridSection } from "@/components/shared/IndustryGridSection";
 import { TestimonialSlider } from "@/components/shared/TestimonialSlider";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 
 
 import banner from "@/images/enterprise-business-solutions.webp";
@@ -64,23 +65,15 @@ export default async function EnterpriseBusinessSolutionsPage() {
             />
 
             {/* Services Section */}
-            <section className="py-[50px] bg-[#f7f8fd] text-[#14133b]">
-                <div className="container mx-auto px-6 max-w-7xl text-center">
-                    <h2 className="text-[26px] md:text-[36px] font-semibold mb-[18px]">Enterprise Business Services</h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left mt-12">
-                        {ENTERPRISE_SERVICES.map((service, idx) => (
-                            <div key={idx} className="bg-white p-10 shadow-sm hover:shadow-xl transition-all duration-300 border-b-4 border-transparent hover:border-orange-500 group border border-gray-100 h-full flex flex-col">
-                                <div className="mb-6 text-[#f29111] transition-transform duration-300 group-hover:scale-110">
-                                    {service.icon}
-                                </div>
-                                <h3 className="text-[19px] font-semibold mb-4 group-hover:text-orange-500 transition-colors uppercase tracking-tight">
-                                    {service.title}
-                                </h3>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                title="Enterprise Business Services"
+                variant="simple"
+                background="bg-[#f7f8fd]"
+                services={ENTERPRISE_SERVICES.map(service => ({
+                    title: service.title,
+                    icon: service.icon
+                }))}
+            />
 
             <IndustryGridSection
                 title="Industry We Serve"

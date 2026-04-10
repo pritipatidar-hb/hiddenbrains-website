@@ -11,6 +11,7 @@ import { CtaSection } from "@/components/shared/CtaSection";
 
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { BenefitsSection } from "@/components/shared/BenefitsSection";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 
 import banner from "@/images/fa.laravel-development.webp";
 
@@ -74,25 +75,17 @@ export default async function LaravelDevelopmentPage() {
             />
 
             {/* Services Section */}
-            <section className="py-[50px] bg-gray-50">
-                <div className="container mx-auto px-6 max-w-7xl text-center">
-                    <h2 className="text-[26px] md:text-[36px] font-bold mb-[18px] text-[#14133b]">Best Laravel Development Services We Offer At Hidden Brains UK</h2>
-                    <p className=" mx-auto text-[#6a7c92] text-[16px] md:text-lg  leading-relaxed">
-                        We are the foremost Laravel development firm. We have an in-depth understanding of the framework and the skills to give you the finest-in-class Laravel web development services. With our team of expert Laravel developers, we are your go-to experts for top-notch website development solutions.
-                    </p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left mt-[30px]">
-                        {LARAVEL_SERVICES.map((service, idx) => (
-                            <div key={idx} className="bg-white p-10 shadow-sm hover:shadow-xl transition-all duration-300 border-b-4 border-transparent hover:border-orange-500 group border border-gray-100 h-full flex flex-col">
-                                <div className="mb-6 text-[#f29111] transition-transform duration-300 group-hover:scale-110">
-                                    {service.icon}
-                                </div>
-                                <h3 className="text-[19px] font-bold mb-4 group-hover:text-orange-500 transition-colors uppercase tracking-tight">{service.title}</h3>
-                                <p className="text-[#6a7c92] text-[16px] leading-relaxed flex-grow">{service.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                title="Best Laravel Development Services We Offer At Hidden Brains UK"
+                description="We are the foremost Laravel development firm. We have an in-depth understanding of the framework and the skills to give you the finest-in-class Laravel web development services. With our team of expert Laravel developers, we are your go-to experts for top-notch website development solutions."
+                variant="simple"
+                background="bg-gray-50"
+                services={LARAVEL_SERVICES.map(service => ({
+                    title: service.title,
+                    description: service.desc,
+                    icon: service.icon
+                }))}
+            />
 
             {/* Industry Section */}
             <section className="py-[50px] bg-white">

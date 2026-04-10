@@ -10,6 +10,7 @@ import { GuideSection } from "@/components/shared/GuideSection";
 import { CtaSection } from "@/components/shared/CtaSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { BenefitsSection } from "@/components/shared/BenefitsSection";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 
 import banner from "@/images/C_Banner.webp";
 
@@ -71,25 +72,17 @@ export default async function CSharpDevelopmentPage() {
             />
 
             {/* Services Section */}
-            <section className="py-[50px] bg-gray-50">
-                <div className="container mx-auto px-6 max-w-7xl text-center">
-                    <h2 className="text-[26px] md:text-[36px] font-semibold mb-[18px] text-[#14133b]">Our Exclusive C# Development Services Offered By Hidden Brains In The UK</h2>
-                    <p className=" mx-auto text-[#6a7c92] text-[19px] font-normal mb-16 leading-relaxed">
-                        Our company is the leading provider of ASP.NET MVC development services. We have an in-depth understanding of the framework and the skills necessary to deliver the best results. As the experts in ASP.NET development, we are at your service for top-notch website development services.
-                    </p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left mt-[30px]">
-                        {C_SHARP_SERVICES.map((service, idx) => (
-                            <div key={idx} className="bg-white p-10 shadow-sm hover:shadow-xl transition-all duration-300 border-b-4 border-transparent hover:border-orange-500 group border border-gray-100 h-full flex flex-col">
-                                <div className="mb-6 text-[#f29111] transition-transform duration-300 group-hover:scale-110">
-                                    {service.icon}
-                                </div>
-                                <h3 className="text-[20px] font-semibold mb-[10px] group-hover:text-orange-500 transition-colors uppercase tracking-tight">{service.title}</h3>
-                                <p className="text-[#6a7c92] leading-relaxed flex-grow">{service.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                title="Our Exclusive C# Development Services Offered By Hidden Brains In The UK"
+                description="Our company is the leading provider of ASP.NET MVC development services. We have an in-depth understanding of the framework and the skills necessary to deliver the best results. As the experts in ASP.NET development, we are at your service for top-notch website development services."
+                variant="simple"
+                background="bg-gray-50"
+                services={C_SHARP_SERVICES.map(service => ({
+                    title: service.title,
+                    description: service.desc,
+                    icon: service.icon
+                }))}
+            />
 
             {/* Industry Section */}
             <section className="py-[50px] bg-white">

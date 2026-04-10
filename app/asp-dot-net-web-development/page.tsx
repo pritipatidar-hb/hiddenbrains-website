@@ -9,6 +9,7 @@ import { HeroSection } from "@/components/shared/HeroSection";
 import { IndustrySlider } from "@/components/shared/IndustrySlider";
 import { GuideSection } from "@/components/shared/GuideSection";
 import banner from "@/images/asp-dot-net-web-development.webp";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 
 import {
     ASP_NET_HERO,
@@ -70,25 +71,17 @@ export default async function ASPNetDevelopmentPage() {
             />
 
             {/* Services Section */}
-            <section className="py-[50px] bg-gray-50 text-[#14133b]">
-                <div className="container mx-auto px-6 max-w-7xl text-center">
-                    <h2 className="text-[26px] md:text-[36px] font-semibold mb-[18px] text-[#14133b]">Our ASP.NET Application Development Services</h2>
-                    <p className=" mx-auto text-[#6a7c92] text-[16px] md:text-lg mb-[30px]">
-                        With 20+ years of experience in crafting .NET solutions for clients from different industry verticals, we have got expertise in creating high-end performing apps with powerful backends and impressive front-end features.
-                    </p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left mt-16">
-                        {ASP_NET_SERVICES.map((service, idx) => (
-                            <div key={idx} className="bg-white p-10 shadow-sm hover:shadow-xl transition-all duration-300 border-b-4 border-transparent hover:border-orange-500 group border border-gray-100 h-full">
-                                <div className="mb-6 text-[#f29111]">
-                                    {service.icon}
-                                </div>
-                                <h3 className="text-[19px] font-semibold mb-4 group-hover:text-orange-500 transition-colors uppercase tracking-tight">{service.title}</h3>
-                                <p className="text-[#6a7c92] leading-relaxed">{service.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                title="Our ASP.NET Application Development Services"
+                description="With 20+ years of experience in crafting .NET solutions for clients from different industry verticals, we have got expertise in creating high-end performing apps with powerful backends and impressive front-end features."
+                variant="simple"
+                background="bg-gray-50"
+                services={ASP_NET_SERVICES.map(service => ({
+                    title: service.title,
+                    description: service.desc,
+                    icon: service.icon
+                }))}
+            />
 
             {/* Industry Section */}
             <section className="py-[50px] bg-white">

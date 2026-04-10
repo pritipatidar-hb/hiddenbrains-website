@@ -10,6 +10,7 @@ import { TestimonialSlider } from "@/components/shared/TestimonialSlider";
 import { IntroductionSection } from "@/components/shared/IntroductionSection";
 import { HeroSection } from "@/components/shared/HeroSection";
 import { IndustryGridSection } from "@/components/shared/IndustryGridSection";
+import { ServicesSection } from "@/components/shared/ServicesSection";
 import { IPAD_TESTIMONIALS } from '@/lib/ipad-app-data';
 import banner from "@/images/ionic-app-development-Banner.webp";
 
@@ -75,25 +76,17 @@ export default async function IonicAppDevelopmentPage() {
             />
 
             {/* Services Section */}
-            <section className="py-[50px] bg-white text-[#14133b]">
-                <div className="container mx-auto px-6 max-w-7xl text-center">
-                    <h2 className="text-[26px] md:text-[36px] font-bold mb-[18px]">Ionic App Development Services</h2>
-                    <p className="max-w-4xl mx-auto text-[#6a7c92]  text-[16px] md:text-[18px] ">
-                        We provide comprehensive Ionic development services, from custom framework development to enterprise-grade solutions.
-                    </p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left mt-16">
-                        {IONIC_SERVICES.map((service, idx) => (
-                            <div key={idx} className="bg-white p-10 shadow-sm hover:shadow-xl transition-all duration-300 border-b-4 border-transparent hover:border-orange-500 group border border-gray-100">
-                                <div className="mb-6 text-[#f29111]">
-                                    {service.icon}
-                                </div>
-                                <h3 className="text-[19px] font-semibold mb-4 group-hover:text-orange-500 transition-colors uppercase tracking-tight">{service.title}</h3>
-                                <p className="text-[#6a7c92] leading-relaxed">{service.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <ServicesSection
+                title="Ionic App Development Services"
+                description="We provide comprehensive Ionic development services, from custom framework development to enterprise-grade solutions."
+                variant="simple"
+                background="bg-white"
+                services={IONIC_SERVICES.map(service => ({
+                    title: service.title,
+                    description: service.desc,
+                    icon: service.icon
+                }))}
+            />
 
             {/* Industry Grid Section */}
             <IndustryGridSection

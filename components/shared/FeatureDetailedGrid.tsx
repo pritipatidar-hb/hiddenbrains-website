@@ -5,7 +5,8 @@ interface FeatureDetailedItem {
     title: string;
     image: string;
     icon: ReactNode;
-    items: string[];
+    description?: string | ReactNode;
+    items?: string[];
     color?: string; // Optional color class for the icon wrap
 }
 
@@ -44,20 +45,29 @@ export const FeatureDetailedGrid = ({ items, className = "", bgClass = "bg-white
                             </div>
 
                             {/* Card Content Area */}
-                            <div className="p-8 md:p-10 pt-12 flex flex-col items-center flex-grow">
+                            <div className="p-8 md:p-10 pt-12 flex flex-col items-center grow">
                                 <h3 className="text-[20px] md:text-[22px] font-semibold text-[#14133b] mb-8 text-center transition-colors duration-300 group-hover:text-[#f29111]">
                                     {item.title}
                                 </h3>
-                                <ul className="space-y-4 w-full">
-                                    {item.items.map((bullet, bIndex) => (
-                                        <li key={bIndex} className="flex items-start gap-3 group/item text-sm md:text-base">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-[#f29111] shrink-0 mt-2 transition-transform duration-300 group-hover/item:scale-125"></div>
-                                            <span className="text-[#6a7c92] leading-relaxed group-hover/item:text-[#14133b] transition-colors duration-300">
-                                                {bullet}
-                                            </span>
-                                        </li>
-                                    ))}
-                                </ul>
+                                
+                                {item.description && (
+                                    <div className="text-[#6a7c92] text-[15px] font-normal leading-relaxed text-center mb-6">
+                                        {item.description}
+                                    </div>
+                                )}
+
+                                {item.items && item.items.length > 0 && (
+                                    <ul className="space-y-4 w-full">
+                                        {item.items.map((bullet, bIndex) => (
+                                            <li key={bIndex} className="flex items-start gap-3 group/item text-sm md:text-base">
+                                                <div className="w-1.5 h-1.5 rounded-full bg-[#f29111] shrink-0 mt-2 transition-transform duration-300 group-hover/item:scale-125"></div>
+                                                <span className="text-[#6a7c92] leading-relaxed group-hover/item:text-[#14133b] transition-colors duration-300">
+                                                    {bullet}
+                                                </span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
                             </div>
                         </article>
                     ))}
